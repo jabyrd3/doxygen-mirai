@@ -1,0 +1,10 @@
+<map id="attack_udp_generic" name="attack_udp_generic">
+<area shape="rect" id="node2" href="$attack_8c.html#ab59e5bf31f63eeb001f8ec1278a15907" title="attack_get_opt_int" alt="" coords="192,29,322,55"/>
+<area shape="rect" id="node5" href="$rand_8c.html#accf5c4faf4fb7eb9d74bbf1764921b00" title="rand_next" alt="" coords="397,105,477,131"/>
+<area shape="rect" id="node7" href="$rand_8c.html#a11c986f4ca9d396a9bc68c0dd4b3903f" title="rand_str" alt="" coords="222,131,292,156"/>
+<area shape="rect" id="node8" href="$checksum_8c.html#a84522f5e663ea711a5ceafdf03e586ea" title="checksum_generic" alt="" coords="191,180,324,205"/>
+<area shape="rect" id="node9" href="$checksum_8c.html#a5144ab59500e01ed196ae6d8b4584c98" title="checksum_tcpudp" alt="" coords="193,229,322,255"/>
+<area shape="rect" id="node3" href="$attack_8c.html#a79b03d7c093d14a1640b2e5bcf2c3c38" title="attack_get_opt_str" alt="" coords="372,5,503,31"/>
+<area shape="rect" id="node4" href="$mirai_2bot_2util_8c.html#a45cd12b38d32ad249e74803c96a12cd3" title="util_atoi" alt="" coords="403,55,471,80"/>
+<area shape="rect" id="node6" href="$enc_8c.html#aa880e16f83b9fba77f7b9cb8ab81a6fe" title="x" alt="" coords="551,105,589,131"/>
+</map>

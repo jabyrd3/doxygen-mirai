@@ -1,0 +1,8 @@
+<map id="mirai/bot/attack.c" name="mirai/bot/attack.c">
+<area shape="rect" id="node6" href="$mirai_2bot_2includes_8h.html" title="includes.h" alt="" coords="430,225,511,251"/>
+<area shape="rect" id="node9" href="$attack_8h.html" title="attack.h" alt="" coords="514,79,582,104"/>
+<area shape="rect" id="node16" href="$rand_8h.html" title="rand.h" alt="" coords="904,225,963,251"/>
+<area shape="rect" id="node17" href="$mirai_2bot_2util_8h.html" title="util.h" alt="" coords="144,79,194,104"/>
+<area shape="rect" id="node18" href="$scanner_8h.html" title="scanner.h" alt="" coords="908,152,987,177"/>
+<area shape="rect" id="node15" href="$protocol_8h.html" title="protocol.h" alt="" coords="508,152,588,177"/>
+</map>

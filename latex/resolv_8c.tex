@@ -1,0 +1,144 @@
+\hypertarget{resolv_8c}{}\section{mirai/bot/resolv.c File Reference}
+\label{resolv_8c}\index{mirai/bot/resolv.\+c@{mirai/bot/resolv.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/select.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}resolv.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}protocol.\+h\char`\"{}}\\*
+Include dependency graph for resolv.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{resolv_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{resolv_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{resolv_8c_a34ff8173133c46ba5f52a187392bb1db}{resolv\+\_\+domain\+\_\+to\+\_\+hostname} (char $\ast$dst\+\_\+hostname, char $\ast$src\+\_\+domain)
+\item 
+struct \hyperlink{structresolv__entries}{resolv\+\_\+entries} $\ast$ \hyperlink{resolv_8c_a6eb2fe08d97f646f1bc49cfd80aba7eb}{resolv\+\_\+lookup} (char $\ast$domain)
+\item 
+void \hyperlink{resolv_8c_afddedcd192860f219d5bc41b48de7055}{resolv\+\_\+entries\+\_\+free} (struct \hyperlink{structresolv__entries}{resolv\+\_\+entries} $\ast$entries)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{resolv.\+c@{resolv.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!resolv.\+c@{resolv.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{resolv_8c_a369266c24eacffb87046522897a570d5}{}\label{resolv_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file resolv.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{resolv.\+c@{resolv.\+c}!resolv\+\_\+domain\+\_\+to\+\_\+hostname@{resolv\+\_\+domain\+\_\+to\+\_\+hostname}}
+\index{resolv\+\_\+domain\+\_\+to\+\_\+hostname@{resolv\+\_\+domain\+\_\+to\+\_\+hostname}!resolv.\+c@{resolv.\+c}}
+\subsubsection[{\texorpdfstring{resolv\+\_\+domain\+\_\+to\+\_\+hostname(char $\ast$dst\+\_\+hostname, char $\ast$src\+\_\+domain)}{resolv_domain_to_hostname(char *dst_hostname, char *src_domain)}}]{\setlength{\rightskip}{0pt plus 5cm}void resolv\+\_\+domain\+\_\+to\+\_\+hostname (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dst\+\_\+hostname, }
+\item[{char $\ast$}]{src\+\_\+domain}
+\end{DoxyParamCaption}
+)}\hypertarget{resolv_8c_a34ff8173133c46ba5f52a187392bb1db}{}\label{resolv_8c_a34ff8173133c46ba5f52a187392bb1db}
+
+
+Definition at line 21 of file resolv.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{resolv_8c_a34ff8173133c46ba5f52a187392bb1db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{resolv_8c_a34ff8173133c46ba5f52a187392bb1db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{resolv.\+c@{resolv.\+c}!resolv\+\_\+entries\+\_\+free@{resolv\+\_\+entries\+\_\+free}}
+\index{resolv\+\_\+entries\+\_\+free@{resolv\+\_\+entries\+\_\+free}!resolv.\+c@{resolv.\+c}}
+\subsubsection[{\texorpdfstring{resolv\+\_\+entries\+\_\+free(struct resolv\+\_\+entries $\ast$entries)}{resolv_entries_free(struct resolv_entries *entries)}}]{\setlength{\rightskip}{0pt plus 5cm}void resolv\+\_\+entries\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{struct {\bf resolv\+\_\+entries} $\ast$}]{entries}
+\end{DoxyParamCaption}
+)}\hypertarget{resolv_8c_afddedcd192860f219d5bc41b48de7055}{}\label{resolv_8c_afddedcd192860f219d5bc41b48de7055}
+
+
+Definition at line 230 of file resolv.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{resolv_8c_afddedcd192860f219d5bc41b48de7055_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{resolv.\+c@{resolv.\+c}!resolv\+\_\+lookup@{resolv\+\_\+lookup}}
+\index{resolv\+\_\+lookup@{resolv\+\_\+lookup}!resolv.\+c@{resolv.\+c}}
+\subsubsection[{\texorpdfstring{resolv\+\_\+lookup(char $\ast$domain)}{resolv_lookup(char *domain)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf resolv\+\_\+entries}$\ast$ resolv\+\_\+lookup (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{resolv_8c_a6eb2fe08d97f646f1bc49cfd80aba7eb}{}\label{resolv_8c_a6eb2fe08d97f646f1bc49cfd80aba7eb}
+
+
+Definition at line 67 of file resolv.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{resolv_8c_a6eb2fe08d97f646f1bc49cfd80aba7eb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{resolv_8c_a6eb2fe08d97f646f1bc49cfd80aba7eb_icgraph}
+\end{center}
+\end{figure}
+
+

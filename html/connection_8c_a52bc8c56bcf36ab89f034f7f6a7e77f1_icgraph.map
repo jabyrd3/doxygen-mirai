@@ -1,0 +1,5 @@
+<map id="connection_consume_prompt" name="connection_consume_prompt">
+<area shape="rect" id="node2" href="$server_8c.html#a87188a72b71cc1291721d426413f1290" title="server_telnet_probe" alt="" coords="201,12,341,37"/>
+<area shape="rect" id="node3" href="$server_8c.html#a619e9617d6a9c0458a29c25761a31fd1" title="server_queue_telnet" alt="" coords="389,12,532,37"/>
+<area shape="rect" id="node4" href="$loader_2src_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="580,12,630,37"/>
+</map>

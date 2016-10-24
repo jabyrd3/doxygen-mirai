@@ -1,0 +1,166 @@
+\hypertarget{server_8c}{}\section{loader/src/server.c File Reference}
+\label{server_8c}\index{loader/src/server.\+c@{loader/src/server.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$sys/epoll.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sched.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}headers/includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/server.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/telnet\+\_\+info.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/connection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/binary.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/util.\+h\char`\"{}}\\*
+Include dependency graph for server.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{server_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structserver}{server} $\ast$ \hyperlink{server_8c_a2cf30fe0bab904fee00364d90af96a01}{server\+\_\+create} (uint8\+\_\+t threads, uint8\+\_\+t addr\+\_\+len, \hyperlink{loader_2src_2headers_2includes_8h_aaadf2e480fd246ff9e932039b223baed}{ipv4\+\_\+t} $\ast$addrs, uint32\+\_\+t max\+\_\+open, char $\ast$wghip, \hyperlink{loader_2src_2headers_2includes_8h_adccb5337cf206fe3eca7c4732f634bb9}{port\+\_\+t} wghp, char $\ast$thip)
+\item 
+void \hyperlink{server_8c_a15c57c2a3267d6e72f11825bf46ab806}{server\+\_\+destroy} (struct \hyperlink{structserver}{server} $\ast$srv)
+\item 
+void \hyperlink{server_8c_a619e9617d6a9c0458a29c25761a31fd1}{server\+\_\+queue\+\_\+telnet} (struct \hyperlink{structserver}{server} $\ast$srv, struct \hyperlink{structtelnet__info}{telnet\+\_\+info} $\ast$info)
+\item 
+void \hyperlink{server_8c_a87188a72b71cc1291721d426413f1290}{server\+\_\+telnet\+\_\+probe} (struct \hyperlink{structserver}{server} $\ast$srv, struct \hyperlink{structtelnet__info}{telnet\+\_\+info} $\ast$info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{server.\+c@{server.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!server.\+c@{server.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{server_8c_a369266c24eacffb87046522897a570d5}{}\label{server_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file server.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{server.\+c@{server.\+c}!server\+\_\+create@{server\+\_\+create}}
+\index{server\+\_\+create@{server\+\_\+create}!server.\+c@{server.\+c}}
+\subsubsection[{\texorpdfstring{server\+\_\+create(uint8\+\_\+t threads, uint8\+\_\+t addr\+\_\+len, ipv4\+\_\+t $\ast$addrs, uint32\+\_\+t max\+\_\+open, char $\ast$wghip, port\+\_\+t wghp, char $\ast$thip)}{server_create(uint8_t threads, uint8_t addr_len, ipv4_t *addrs, uint32_t max_open, char *wghip, port_t wghp, char *thip)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf server}$\ast$ server\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{threads, }
+\item[{uint8\+\_\+t}]{addr\+\_\+len, }
+\item[{{\bf ipv4\+\_\+t} $\ast$}]{addrs, }
+\item[{uint32\+\_\+t}]{max\+\_\+open, }
+\item[{char $\ast$}]{wghip, }
+\item[{{\bf port\+\_\+t}}]{wghp, }
+\item[{char $\ast$}]{thip}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8c_a2cf30fe0bab904fee00364d90af96a01}{}\label{server_8c_a2cf30fe0bab904fee00364d90af96a01}
+
+
+Definition at line 19 of file server.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{server_8c_a2cf30fe0bab904fee00364d90af96a01_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{server.\+c@{server.\+c}!server\+\_\+destroy@{server\+\_\+destroy}}
+\index{server\+\_\+destroy@{server\+\_\+destroy}!server.\+c@{server.\+c}}
+\subsubsection[{\texorpdfstring{server\+\_\+destroy(struct server $\ast$srv)}{server_destroy(struct server *srv)}}]{\setlength{\rightskip}{0pt plus 5cm}void server\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{struct {\bf server} $\ast$}]{srv}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8c_a15c57c2a3267d6e72f11825bf46ab806}{}\label{server_8c_a15c57c2a3267d6e72f11825bf46ab806}
+
+
+Definition at line 78 of file server.\+c.
+
+\index{server.\+c@{server.\+c}!server\+\_\+queue\+\_\+telnet@{server\+\_\+queue\+\_\+telnet}}
+\index{server\+\_\+queue\+\_\+telnet@{server\+\_\+queue\+\_\+telnet}!server.\+c@{server.\+c}}
+\subsubsection[{\texorpdfstring{server\+\_\+queue\+\_\+telnet(struct server $\ast$srv, struct telnet\+\_\+info $\ast$info)}{server_queue_telnet(struct server *srv, struct telnet_info *info)}}]{\setlength{\rightskip}{0pt plus 5cm}void server\+\_\+queue\+\_\+telnet (
+\begin{DoxyParamCaption}
+\item[{struct {\bf server} $\ast$}]{srv, }
+\item[{struct {\bf telnet\+\_\+info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8c_a619e9617d6a9c0458a29c25761a31fd1}{}\label{server_8c_a619e9617d6a9c0458a29c25761a31fd1}
+
+
+Definition at line 89 of file server.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8c_a619e9617d6a9c0458a29c25761a31fd1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{server_8c_a619e9617d6a9c0458a29c25761a31fd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{server.\+c@{server.\+c}!server\+\_\+telnet\+\_\+probe@{server\+\_\+telnet\+\_\+probe}}
+\index{server\+\_\+telnet\+\_\+probe@{server\+\_\+telnet\+\_\+probe}!server.\+c@{server.\+c}}
+\subsubsection[{\texorpdfstring{server\+\_\+telnet\+\_\+probe(struct server $\ast$srv, struct telnet\+\_\+info $\ast$info)}{server_telnet_probe(struct server *srv, struct telnet_info *info)}}]{\setlength{\rightskip}{0pt plus 5cm}void server\+\_\+telnet\+\_\+probe (
+\begin{DoxyParamCaption}
+\item[{struct {\bf server} $\ast$}]{srv, }
+\item[{struct {\bf telnet\+\_\+info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8c_a87188a72b71cc1291721d426413f1290}{}\label{server_8c_a87188a72b71cc1291721d426413f1290}
+
+
+Definition at line 103 of file server.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{server_8c_a87188a72b71cc1291721d426413f1290_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8c_a87188a72b71cc1291721d426413f1290_icgraph}
+\end{center}
+\end{figure}
+
+

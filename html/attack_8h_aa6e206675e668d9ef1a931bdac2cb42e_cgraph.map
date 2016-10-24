@@ -1,0 +1,12 @@
+<map id="attack_udp_dns" name="attack_udp_dns">
+<area shape="rect" id="node2" href="$attack_8c.html#ab59e5bf31f63eeb001f8ec1278a15907" title="attack_get_opt_int" alt="" coords="170,55,300,80"/>
+<area shape="rect" id="node3" href="$attack_8c.html#a79b03d7c093d14a1640b2e5bcf2c3c38" title="attack_get_opt_str" alt="" coords="349,5,480,31"/>
+<area shape="rect" id="node5" href="$mirai_2bot_2util_8c.html#a181a242a15f441fe3eefe68330b0c8e3" title="util_strlen" alt="" coords="196,104,274,129"/>
+<area shape="rect" id="node6" href="$mirai_2bot_2util_8c.html#a8654e276185a2f53935614d38f4117f3" title="util_memcpy" alt="" coords="187,153,283,179"/>
+<area shape="rect" id="node7" href="$rand_8c.html#accf5c4faf4fb7eb9d74bbf1764921b00" title="rand_next" alt="" coords="375,229,455,255"/>
+<area shape="rect" id="node9" href="$rand_8c.html#a600660d96f167d01ebcc62258688a921" title="rand_alphastr" alt="" coords="184,255,286,280"/>
+<area shape="rect" id="node10" href="$checksum_8c.html#a84522f5e663ea711a5ceafdf03e586ea" title="checksum_generic" alt="" coords="169,304,301,329"/>
+<area shape="rect" id="node11" href="$checksum_8c.html#a5144ab59500e01ed196ae6d8b4584c98" title="checksum_tcpudp" alt="" coords="171,353,299,379"/>
+<area shape="rect" id="node4" href="$mirai_2bot_2util_8c.html#a45cd12b38d32ad249e74803c96a12cd3" title="util_atoi" alt="" coords="381,55,448,80"/>
+<area shape="rect" id="node8" href="$enc_8c.html#aa880e16f83b9fba77f7b9cb8ab81a6fe" title="x" alt="" coords="528,229,567,255"/>
+</map>

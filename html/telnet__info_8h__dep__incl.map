@@ -1,0 +1,10 @@
+<map id="loader/src/headers/telnet_info.h" name="loader/src/headers/telnet_info.h">
+<area shape="rect" id="node2" href="$connection_8h.html" title="loader/src/headers\l/connection.h" alt="" coords="339,92,471,131"/>
+<area shape="rect" id="node4" href="$server_8h.html" title="loader/src/headers\l/server.h" alt="" coords="237,179,368,217"/>
+<area shape="rect" id="node6" href="$loader_2src_2main_8c.html" title="loader/src/main.c" alt="" coords="476,352,599,377"/>
+<area shape="rect" id="node7" href="$server_8c.html" title="loader/src/server.c" alt="" coords="5,352,136,377"/>
+<area shape="rect" id="node9" href="$telnet__info_8c.html" title="loader/src/telnet_info.c" alt="" coords="570,99,726,124"/>
+<area shape="rect" id="node3" href="$connection_8c.html" title="loader/src/connection.c" alt="" coords="294,352,452,377"/>
+<area shape="rect" id="node5" href="$loader_2src_2headers_2util_8h.html" title="loader/src/headers\l/util.h" alt="" coords="213,265,344,304"/>
+<area shape="rect" id="node8" href="$loader_2src_2util_8c.html" title="loader/src/util.c" alt="" coords="159,352,270,377"/>
+</map>

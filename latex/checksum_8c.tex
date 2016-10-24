@@ -1,0 +1,89 @@
+\hypertarget{checksum_8c}{}\section{mirai/bot/checksum.c File Reference}
+\label{checksum_8c}\index{mirai/bot/checksum.\+c@{mirai/bot/checksum.\+c}}
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$linux/ip.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}checksum.\+h\char`\"{}}\\*
+Include dependency graph for checksum.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{checksum_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{checksum_8c_a84522f5e663ea711a5ceafdf03e586ea}{checksum\+\_\+generic} (uint16\+\_\+t $\ast$addr, uint32\+\_\+t count)
+\item 
+uint16\+\_\+t \hyperlink{checksum_8c_a5144ab59500e01ed196ae6d8b4584c98}{checksum\+\_\+tcpudp} (struct iphdr $\ast$iph, void $\ast$buff, uint16\+\_\+t \hyperlink{protocol_8h_ad1a572736a10ff6b282c5f43c4ea1ccf}{data\+\_\+len}, int len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{checksum.\+c@{checksum.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!checksum.\+c@{checksum.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{checksum_8c_a369266c24eacffb87046522897a570d5}{}\label{checksum_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file checksum.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{checksum.\+c@{checksum.\+c}!checksum\+\_\+generic@{checksum\+\_\+generic}}
+\index{checksum\+\_\+generic@{checksum\+\_\+generic}!checksum.\+c@{checksum.\+c}}
+\subsubsection[{\texorpdfstring{checksum\+\_\+generic(uint16\+\_\+t $\ast$addr, uint32\+\_\+t count)}{checksum_generic(uint16_t *addr, uint32_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t checksum\+\_\+generic (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t $\ast$}]{addr, }
+\item[{uint32\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{checksum_8c_a84522f5e663ea711a5ceafdf03e586ea}{}\label{checksum_8c_a84522f5e663ea711a5ceafdf03e586ea}
+
+
+Definition at line 9 of file checksum.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8c_a84522f5e663ea711a5ceafdf03e586ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{checksum.\+c@{checksum.\+c}!checksum\+\_\+tcpudp@{checksum\+\_\+tcpudp}}
+\index{checksum\+\_\+tcpudp@{checksum\+\_\+tcpudp}!checksum.\+c@{checksum.\+c}}
+\subsubsection[{\texorpdfstring{checksum\+\_\+tcpudp(struct iphdr $\ast$iph, void $\ast$buff, uint16\+\_\+t data\+\_\+len, int len)}{checksum_tcpudp(struct iphdr *iph, void *buff, uint16_t data_len, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t checksum\+\_\+tcpudp (
+\begin{DoxyParamCaption}
+\item[{struct iphdr $\ast$}]{iph, }
+\item[{void $\ast$}]{buff, }
+\item[{uint16\+\_\+t}]{data\+\_\+len, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{checksum_8c_a5144ab59500e01ed196ae6d8b4584c98}{}\label{checksum_8c_a5144ab59500e01ed196ae6d8b4584c98}
+
+
+Definition at line 24 of file checksum.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8c_a5144ab59500e01ed196ae6d8b4584c98_icgraph}
+\end{center}
+\end{figure}
+
+

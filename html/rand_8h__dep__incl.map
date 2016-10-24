@@ -1,0 +1,10 @@
+<map id="mirai/bot/rand.h" name="mirai/bot/rand.h">
+<area shape="rect" id="node2" href="$attack_8c.html" title="mirai/bot/attack.c" alt="" coords="5,79,127,104"/>
+<area shape="rect" id="node3" href="$attack__app_8c.html" title="mirai/bot/attack_app.c" alt="" coords="152,79,304,104"/>
+<area shape="rect" id="node4" href="$attack__gre_8c.html" title="mirai/bot/attack_gre.c" alt="" coords="328,79,477,104"/>
+<area shape="rect" id="node5" href="$attack__tcp_8c.html" title="mirai/bot/attack_tcp.c" alt="" coords="501,79,648,104"/>
+<area shape="rect" id="node6" href="$attack__udp_8c.html" title="mirai/bot/attack_udp.c" alt="" coords="672,79,824,104"/>
+<area shape="rect" id="node7" href="$mirai_2bot_2main_8c.html" title="mirai/bot/main.c" alt="" coords="847,79,963,104"/>
+<area shape="rect" id="node8" href="$rand_8c.html" title="mirai/bot/rand.c" alt="" coords="987,79,1100,104"/>
+<area shape="rect" id="node9" href="$resolv_8c.html" title="mirai/bot/resolv.c" alt="" coords="1124,79,1246,104"/>
+</map>

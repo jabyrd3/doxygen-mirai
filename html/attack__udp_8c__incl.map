@@ -1,0 +1,9 @@
+<map id="mirai/bot/attack_udp.c" name="mirai/bot/attack_udp.c">
+<area shape="rect" id="node10" href="$mirai_2bot_2includes_8h.html" title="includes.h" alt="" coords="808,225,890,251"/>
+<area shape="rect" id="node13" href="$attack_8h.html" title="attack.h" alt="" coords="607,79,675,104"/>
+<area shape="rect" id="node16" href="$protocol_8h.html" title="protocol.h" alt="" coords="912,152,992,177"/>
+<area shape="rect" id="node17" href="$checksum_8h.html" title="checksum.h" alt="" coords="751,79,843,104"/>
+<area shape="rect" id="node18" href="$rand_8h.html" title="rand.h" alt="" coords="1130,225,1189,251"/>
+<area shape="rect" id="node19" href="$mirai_2bot_2util_8h.html" title="util.h" alt="" coords="263,79,313,104"/>
+<area shape="rect" id="node20" href="$table_8h.html" title="table.h" alt="" coords="1066,152,1128,177"/>
+</map>

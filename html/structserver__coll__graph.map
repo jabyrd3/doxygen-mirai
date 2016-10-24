@@ -1,0 +1,6 @@
+<map id="server" name="server">
+<area shape="rect" id="node2" href="$structserver__worker.html" title="server_worker" alt="" coords="5,92,111,117"/>
+<area shape="rect" id="node3" href="$structconnection.html" title="connection" alt="" coords="229,92,314,117"/>
+<area shape="rect" id="node4" href="$structbinary.html" title="binary" alt="" coords="297,5,355,31"/>
+<area shape="rect" id="node5" href="$structtelnet__info.html" title="telnet_info" alt="" coords="379,5,462,31"/>
+</map>

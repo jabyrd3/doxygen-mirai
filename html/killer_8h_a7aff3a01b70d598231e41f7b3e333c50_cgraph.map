@@ -1,0 +1,15 @@
+<map id="killer_init" name="killer_init">
+<area shape="rect" id="node2" href="$killer_8c.html#a334bd8877c3eacd53510aaa3bbd8c28c" title="killer_kill_by_port" alt="" coords="127,255,250,280"/>
+<area shape="rect" id="node4" href="$mirai_2bot_2util_8c.html#a705b6b933bc7bf0bdcb9b47833a78947" title="util_strcpy" alt="" coords="475,305,556,331"/>
+<area shape="rect" id="node7" href="$table_8c.html#aa5a64b3cddd9889fca3114b5a87c402e" title="table_unlock_val" alt="" coords="301,5,422,31"/>
+<area shape="rect" id="node9" href="$mirai_2bot_2util_8c.html#aa244b92b644b15174da5ed933c90f16b" title="util_stristr" alt="" coords="322,455,401,480"/>
+<area shape="rect" id="node10" href="$table_8c.html#a0c03e9a9ebea1c0e6b98b969b56825b2" title="table_lock_val" alt="" coords="309,356,414,381"/>
+<area shape="rect" id="node11" href="$table_8c.html#a960bec3b47b287c42b06c26eb370ed67" title="table_retrieve_val" alt="" coords="298,55,425,80"/>
+<area shape="rect" id="node12" href="$mirai_2bot_2util_8c.html#af2f61b2c3c38da3f06a301c596b5b47d" title="util_zero" alt="" coords="326,405,397,431"/>
+<area shape="rect" id="node14" href="$mirai_2bot_2util_8c.html#a4ac4793080569db24ebca3104041425b" title="util_strcmp" alt="" coords="473,519,559,544"/>
+<area shape="rect" id="node3" href="$mirai_2bot_2util_8c.html#a98833e069ccfb346a13512872cd21a6c" title="util_itoa" alt="" coords="328,156,395,181"/>
+<area shape="rect" id="node5" href="$mirai_2bot_2util_8c.html#a181a242a15f441fe3eefe68330b0c8e3" title="util_strlen" alt="" coords="615,349,694,375"/>
+<area shape="rect" id="node8" href="$mirai_2bot_2util_8c.html#a2546b36c5781823539530c81e0efd4bd" title="util_fdgets" alt="" coords="320,205,402,231"/>
+<area shape="rect" id="node13" href="$mirai_2bot_2util_8c.html#a45cd12b38d32ad249e74803c96a12cd3" title="util_atoi" alt="" coords="328,255,395,280"/>
+<area shape="rect" id="node6" href="$mirai_2bot_2util_8c.html#a8654e276185a2f53935614d38f4117f3" title="util_memcpy" alt="" coords="607,180,703,205"/>
+</map>

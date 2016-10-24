@@ -1,0 +1,421 @@
+\hypertarget{mirai_2bot_2util_8c}{}\section{mirai/bot/util.c File Reference}
+\label{mirai_2bot_2util_8c}\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+{\ttfamily \#include $<$dirent.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table.\+h\char`\"{}}\\*
+Include dependency graph for util.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mirai_2bot_2util_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mirai_2bot_2util_8c_a181a242a15f441fe3eefe68330b0c8e3}{util\+\_\+strlen} (char $\ast$str)
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{mirai_2bot_2util_8c_a983759d15797446fba097be4fd7654fb}{util\+\_\+strncmp} (char $\ast$str1, char $\ast$str2, int len)
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{mirai_2bot_2util_8c_a4ac4793080569db24ebca3104041425b}{util\+\_\+strcmp} (char $\ast$str1, char $\ast$str2)
+\item 
+int \hyperlink{mirai_2bot_2util_8c_a705b6b933bc7bf0bdcb9b47833a78947}{util\+\_\+strcpy} (char $\ast$dst, char $\ast$src)
+\item 
+void \hyperlink{mirai_2bot_2util_8c_a8654e276185a2f53935614d38f4117f3}{util\+\_\+memcpy} (void $\ast$dst, void $\ast$src, int len)
+\item 
+void \hyperlink{mirai_2bot_2util_8c_af2f61b2c3c38da3f06a301c596b5b47d}{util\+\_\+zero} (void $\ast$buf, int len)
+\item 
+int \hyperlink{mirai_2bot_2util_8c_a45cd12b38d32ad249e74803c96a12cd3}{util\+\_\+atoi} (char $\ast$str, int base)
+\item 
+char $\ast$ \hyperlink{mirai_2bot_2util_8c_a98833e069ccfb346a13512872cd21a6c}{util\+\_\+itoa} (int value, int radix, char $\ast$string)
+\item 
+int \hyperlink{mirai_2bot_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}{util\+\_\+memsearch} (char $\ast$buf, int buf\+\_\+len, char $\ast$mem, int mem\+\_\+len)
+\item 
+int \hyperlink{mirai_2bot_2util_8c_aa244b92b644b15174da5ed933c90f16b}{util\+\_\+stristr} (char $\ast$haystack, int haystack\+\_\+len, char $\ast$str)
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_aaadf2e480fd246ff9e932039b223baed}{ipv4\+\_\+t} \hyperlink{mirai_2bot_2util_8c_a27b56c2508008233898cb5e1766593c1}{util\+\_\+local\+\_\+addr} (void)
+\item 
+char $\ast$ \hyperlink{mirai_2bot_2util_8c_a2546b36c5781823539530c81e0efd4bd}{util\+\_\+fdgets} (char $\ast$buffer, int buffer\+\_\+size, int fd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{mirai_2bot_2util_8c_a369266c24eacffb87046522897a570d5}{}\label{mirai_2bot_2util_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file util.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+atoi@{util\+\_\+atoi}}
+\index{util\+\_\+atoi@{util\+\_\+atoi}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+atoi(char $\ast$str, int base)}{util_atoi(char *str, int base)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+atoi (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{base}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a45cd12b38d32ad249e74803c96a12cd3}{}\label{mirai_2bot_2util_8c_a45cd12b38d32ad249e74803c96a12cd3}
+
+
+Definition at line 87 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a45cd12b38d32ad249e74803c96a12cd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+fdgets@{util\+\_\+fdgets}}
+\index{util\+\_\+fdgets@{util\+\_\+fdgets}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+fdgets(char $\ast$buffer, int buffer\+\_\+size, int fd)}{util_fdgets(char *buffer, int buffer_size, int fd)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ util\+\_\+fdgets (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{buffer\+\_\+size, }
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a2546b36c5781823539530c81e0efd4bd}{}\label{mirai_2bot_2util_8c_a2546b36c5781823539530c81e0efd4bd}
+
+
+Definition at line 260 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a2546b36c5781823539530c81e0efd4bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+itoa@{util\+\_\+itoa}}
+\index{util\+\_\+itoa@{util\+\_\+itoa}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+itoa(int value, int radix, char $\ast$string)}{util_itoa(int value, int radix, char *string)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ util\+\_\+itoa (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{int}]{radix, }
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a98833e069ccfb346a13512872cd21a6c}{}\label{mirai_2bot_2util_8c_a98833e069ccfb346a13512872cd21a6c}
+
+
+Definition at line 132 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{mirai_2bot_2util_8c_a98833e069ccfb346a13512872cd21a6c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a98833e069ccfb346a13512872cd21a6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+local\+\_\+addr@{util\+\_\+local\+\_\+addr}}
+\index{util\+\_\+local\+\_\+addr@{util\+\_\+local\+\_\+addr}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+local\+\_\+addr(void)}{util_local_addr(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipv4\+\_\+t} util\+\_\+local\+\_\+addr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a27b56c2508008233898cb5e1766593c1}{}\label{mirai_2bot_2util_8c_a27b56c2508008233898cb5e1766593c1}
+
+
+Definition at line 234 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{mirai_2bot_2util_8c_a27b56c2508008233898cb5e1766593c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+memcpy@{util\+\_\+memcpy}}
+\index{util\+\_\+memcpy@{util\+\_\+memcpy}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+memcpy(void $\ast$dst, void $\ast$src, int len)}{util_memcpy(void *dst, void *src, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void util\+\_\+memcpy (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dst, }
+\item[{void $\ast$}]{src, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a8654e276185a2f53935614d38f4117f3}{}\label{mirai_2bot_2util_8c_a8654e276185a2f53935614d38f4117f3}
+
+
+Definition at line 72 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a8654e276185a2f53935614d38f4117f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+memsearch@{util\+\_\+memsearch}}
+\index{util\+\_\+memsearch@{util\+\_\+memsearch}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+memsearch(char $\ast$buf, int buf\+\_\+len, char $\ast$mem, int mem\+\_\+len)}{util_memsearch(char *buf, int buf_len, char *mem, int mem_len)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+memsearch (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{buf\+\_\+len, }
+\item[{char $\ast$}]{mem, }
+\item[{int}]{mem\+\_\+len}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}{}\label{mirai_2bot_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}
+
+
+Definition at line 188 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+strcmp@{util\+\_\+strcmp}}
+\index{util\+\_\+strcmp@{util\+\_\+strcmp}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+strcmp(char $\ast$str1, char $\ast$str2)}{util_strcmp(char *str1, char *str2)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} util\+\_\+strcmp (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str1, }
+\item[{char $\ast$}]{str2}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a4ac4793080569db24ebca3104041425b}{}\label{mirai_2bot_2util_8c_a4ac4793080569db24ebca3104041425b}
+
+
+Definition at line 47 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{mirai_2bot_2util_8c_a4ac4793080569db24ebca3104041425b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a4ac4793080569db24ebca3104041425b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+strcpy@{util\+\_\+strcpy}}
+\index{util\+\_\+strcpy@{util\+\_\+strcpy}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+strcpy(char $\ast$dst, char $\ast$src)}{util_strcpy(char *dst, char *src)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+strcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dst, }
+\item[{char $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a705b6b933bc7bf0bdcb9b47833a78947}{}\label{mirai_2bot_2util_8c_a705b6b933bc7bf0bdcb9b47833a78947}
+
+
+Definition at line 63 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{mirai_2bot_2util_8c_a705b6b933bc7bf0bdcb9b47833a78947_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a705b6b933bc7bf0bdcb9b47833a78947_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+stristr@{util\+\_\+stristr}}
+\index{util\+\_\+stristr@{util\+\_\+stristr}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+stristr(char $\ast$haystack, int haystack\+\_\+len, char $\ast$str)}{util_stristr(char *haystack, int haystack_len, char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+stristr (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{haystack, }
+\item[{int}]{haystack\+\_\+len, }
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_aa244b92b644b15174da5ed933c90f16b}{}\label{mirai_2bot_2util_8c_aa244b92b644b15174da5ed933c90f16b}
+
+
+Definition at line 209 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{mirai_2bot_2util_8c_aa244b92b644b15174da5ed933c90f16b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_aa244b92b644b15174da5ed933c90f16b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+strlen@{util\+\_\+strlen}}
+\index{util\+\_\+strlen@{util\+\_\+strlen}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+strlen(char $\ast$str)}{util_strlen(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+strlen (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a181a242a15f441fe3eefe68330b0c8e3}{}\label{mirai_2bot_2util_8c_a181a242a15f441fe3eefe68330b0c8e3}
+
+
+Definition at line 21 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a181a242a15f441fe3eefe68330b0c8e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+strncmp@{util\+\_\+strncmp}}
+\index{util\+\_\+strncmp@{util\+\_\+strncmp}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+strncmp(char $\ast$str1, char $\ast$str2, int len)}{util_strncmp(char *str1, char *str2, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} util\+\_\+strncmp (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str1, }
+\item[{char $\ast$}]{str2, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_a983759d15797446fba097be4fd7654fb}{}\label{mirai_2bot_2util_8c_a983759d15797446fba097be4fd7654fb}
+
+
+Definition at line 31 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{mirai_2bot_2util_8c_a983759d15797446fba097be4fd7654fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_a983759d15797446fba097be4fd7654fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{mirai/bot/util.\+c@{mirai/bot/util.\+c}!util\+\_\+zero@{util\+\_\+zero}}
+\index{util\+\_\+zero@{util\+\_\+zero}!mirai/bot/util.\+c@{mirai/bot/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+zero(void $\ast$buf, int len)}{util_zero(void *buf, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void util\+\_\+zero (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2util_8c_af2f61b2c3c38da3f06a301c596b5b47d}{}\label{mirai_2bot_2util_8c_af2f61b2c3c38da3f06a301c596b5b47d}
+
+
+Definition at line 80 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2util_8c_af2f61b2c3c38da3f06a301c596b5b47d_icgraph}
+\end{center}
+\end{figure}
+
+

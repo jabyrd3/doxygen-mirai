@@ -1,0 +1,8 @@
+<map id="connection_close" name="connection_close">
+<area shape="rect" id="node2" href="$connection_8h.html#ab6b2144735ba2c7cedf9b93b4a1927db" title="connection_consume\l_written_dirs" alt="" coords="194,5,342,44"/>
+<area shape="rect" id="node3" href="$server_8c.html#a87188a72b71cc1291721d426413f1290" title="server_telnet_probe" alt="" coords="406,95,546,120"/>
+<area shape="rect" id="node6" href="$connection_8h.html#ad724b4cf4d0bf51c69f33f6469ee4082" title="connection_consume_arch" alt="" coords="178,120,358,145"/>
+<area shape="rect" id="node7" href="$connection_8h.html#a04dc8c68e7380236df79de3e1dc1d8bc" title="connection_upload_echo" alt="" coords="183,169,353,195"/>
+<area shape="rect" id="node4" href="$server_8c.html#a619e9617d6a9c0458a29c25761a31fd1" title="server_queue_telnet" alt="" coords="594,95,737,120"/>
+<area shape="rect" id="node5" href="$loader_2src_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="785,95,835,120"/>
+</map>

@@ -1,0 +1,173 @@
+\hypertarget{table_8c}{}\section{mirai/bot/table.c File Reference}
+\label{table_8c}\index{mirai/bot/table.\+c@{mirai/bot/table.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+Include dependency graph for table.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{table_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{table_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{table_8c_a79eb587b0c1d1a11eb5e75134ca01261}{table\+\_\+init} (void)
+\item 
+void \hyperlink{table_8c_aa5a64b3cddd9889fca3114b5a87c402e}{table\+\_\+unlock\+\_\+val} (uint8\+\_\+t id)
+\item 
+void \hyperlink{table_8c_a0c03e9a9ebea1c0e6b98b969b56825b2}{table\+\_\+lock\+\_\+val} (uint8\+\_\+t id)
+\item 
+char $\ast$ \hyperlink{table_8c_a960bec3b47b287c42b06c26eb370ed67}{table\+\_\+retrieve\+\_\+val} (int id, int $\ast$len)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{table_8c_afaef6e8f1a3f106fc5d74bd5f48fa3dd}{table\+\_\+key} = 0xdeadbeef
+\item 
+struct \hyperlink{structtable__value}{table\+\_\+value} \hyperlink{table_8c_a90098db02448ef8e3de8c811dcc37522}{table} \mbox{[}\hyperlink{table_8h_a434d46cfbdf47b6e1f14d83c29ac4b32}{T\+A\+B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+K\+E\+YS}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{table.\+c@{table.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{table_8c_a369266c24eacffb87046522897a570d5}{}\label{table_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file table.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{table.\+c@{table.\+c}!table\+\_\+init@{table\+\_\+init}}
+\index{table\+\_\+init@{table\+\_\+init}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table\+\_\+init(void)}{table_init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void table\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{table_8c_a79eb587b0c1d1a11eb5e75134ca01261}{}\label{table_8c_a79eb587b0c1d1a11eb5e75134ca01261}
+
+
+Definition at line 16 of file table.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{table_8c_a79eb587b0c1d1a11eb5e75134ca01261_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{table.\+c@{table.\+c}!table\+\_\+lock\+\_\+val@{table\+\_\+lock\+\_\+val}}
+\index{table\+\_\+lock\+\_\+val@{table\+\_\+lock\+\_\+val}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table\+\_\+lock\+\_\+val(uint8\+\_\+t id)}{table_lock_val(uint8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}void table\+\_\+lock\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{table_8c_a0c03e9a9ebea1c0e6b98b969b56825b2}{}\label{table_8c_a0c03e9a9ebea1c0e6b98b969b56825b2}
+
+
+Definition at line 93 of file table.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{table_8c_a0c03e9a9ebea1c0e6b98b969b56825b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{table.\+c@{table.\+c}!table\+\_\+retrieve\+\_\+val@{table\+\_\+retrieve\+\_\+val}}
+\index{table\+\_\+retrieve\+\_\+val@{table\+\_\+retrieve\+\_\+val}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table\+\_\+retrieve\+\_\+val(int id, int $\ast$len)}{table_retrieve_val(int id, int *len)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ table\+\_\+retrieve\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int $\ast$}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{table_8c_a960bec3b47b287c42b06c26eb370ed67}{}\label{table_8c_a960bec3b47b287c42b06c26eb370ed67}
+
+
+Definition at line 108 of file table.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{table_8c_a960bec3b47b287c42b06c26eb370ed67_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{table_8c_a960bec3b47b287c42b06c26eb370ed67_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{table.\+c@{table.\+c}!table\+\_\+unlock\+\_\+val@{table\+\_\+unlock\+\_\+val}}
+\index{table\+\_\+unlock\+\_\+val@{table\+\_\+unlock\+\_\+val}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table\+\_\+unlock\+\_\+val(uint8\+\_\+t id)}{table_unlock_val(uint8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}void table\+\_\+unlock\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{table_8c_aa5a64b3cddd9889fca3114b5a87c402e}{}\label{table_8c_aa5a64b3cddd9889fca3114b5a87c402e}
+
+
+Definition at line 78 of file table.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{table_8c_aa5a64b3cddd9889fca3114b5a87c402e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{table.\+c@{table.\+c}!table@{table}}
+\index{table@{table}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table}{table}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf table\+\_\+value} table\mbox{[}{\bf T\+A\+B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+K\+E\+YS}\mbox{]}}\hypertarget{table_8c_a90098db02448ef8e3de8c811dcc37522}{}\label{table_8c_a90098db02448ef8e3de8c811dcc37522}
+
+
+Definition at line 14 of file table.\+c.
+
+\index{table.\+c@{table.\+c}!table\+\_\+key@{table\+\_\+key}}
+\index{table\+\_\+key@{table\+\_\+key}!table.\+c@{table.\+c}}
+\subsubsection[{\texorpdfstring{table\+\_\+key}{table_key}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t table\+\_\+key = 0xdeadbeef}\hypertarget{table_8c_afaef6e8f1a3f106fc5d74bd5f48fa3dd}{}\label{table_8c_afaef6e8f1a3f106fc5d74bd5f48fa3dd}
+
+
+Definition at line 13 of file table.\+c.
+

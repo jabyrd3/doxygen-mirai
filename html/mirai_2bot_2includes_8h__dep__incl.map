@@ -1,0 +1,22 @@
+<map id="mirai/bot/includes.h" name="mirai/bot/includes.h">
+<area shape="rect" id="node2" href="$attack_8c.html" title="mirai/bot/attack.c" alt="" coords="520,225,642,251"/>
+<area shape="rect" id="node3" href="$attack_8h.html" title="mirai/bot/attack.h" alt="" coords="504,152,627,177"/>
+<area shape="rect" id="node4" href="$attack__app_8c.html" title="mirai/bot/attack_app.c" alt="" coords="849,225,1001,251"/>
+<area shape="rect" id="node5" href="$attack__gre_8c.html" title="mirai/bot/attack_gre.c" alt="" coords="347,225,496,251"/>
+<area shape="rect" id="node6" href="$attack__tcp_8c.html" title="mirai/bot/attack_tcp.c" alt="" coords="176,225,323,251"/>
+<area shape="rect" id="node7" href="$attack__udp_8c.html" title="mirai/bot/attack_udp.c" alt="" coords="667,225,818,251"/>
+<area shape="rect" id="node8" href="$mirai_2bot_2main_8c.html" title="mirai/bot/main.c" alt="" coords="1026,225,1142,251"/>
+<area shape="rect" id="node9" href="$protocol_8h.html" title="mirai/bot/protocol.h" alt="" coords="577,79,711,104"/>
+<area shape="rect" id="node10" href="$resolv_8c.html" title="mirai/bot/resolv.c" alt="" coords="1166,225,1287,251"/>
+<area shape="rect" id="node11" href="$mirai_2bot_2util_8h.html" title="mirai/bot/util.h" alt="" coords="960,152,1064,177"/>
+<area shape="rect" id="node12" href="$killer_8c.html" title="mirai/bot/killer.c" alt="" coords="1578,225,1691,251"/>
+<area shape="rect" id="node13" href="$table_8c.html" title="mirai/bot/table.c" alt="" coords="1312,225,1427,251"/>
+<area shape="rect" id="node14" href="$mirai_2bot_2util_8c.html" title="mirai/bot/util.c" alt="" coords="1451,225,1554,251"/>
+<area shape="rect" id="node15" href="$scanner_8h.html" title="mirai/bot/scanner.h" alt="" coords="752,152,886,177"/>
+<area shape="rect" id="node16" href="$table_8h.html" title="mirai/bot/table.h" alt="" coords="1335,152,1451,177"/>
+<area shape="rect" id="node17" href="$checksum_8h.html" title="mirai/bot/checksum.h" alt="" coords="181,152,328,177"/>
+<area shape="rect" id="node18" href="$checksum_8c.html" title="mirai/bot/checksum.c" alt="" coords="5,225,152,251"/>
+<area shape="rect" id="node19" href="$killer_8h.html" title="mirai/bot/killer.h" alt="" coords="1578,152,1692,177"/>
+<area shape="rect" id="node20" href="$resolv_8h.html" title="mirai/bot/resolv.h" alt="" coords="1190,152,1312,177"/>
+<area shape="rect" id="node21" href="$rand_8c.html" title="mirai/bot/rand.c" alt="" coords="1817,79,1930,104"/>
+</map>

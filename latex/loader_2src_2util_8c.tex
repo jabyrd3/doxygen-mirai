@@ -1,0 +1,158 @@
+\hypertarget{loader_2src_2util_8c}{}\section{loader/src/util.c File Reference}
+\label{loader_2src_2util_8c}\index{loader/src/util.\+c@{loader/src/util.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}headers/includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/server.\+h\char`\"{}}\\*
+Include dependency graph for util.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loader_2src_2util_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{loader_2src_2util_8c_af1bddd272ab58d596235a98a58df8c46}{hex\+Dump} (char $\ast$desc, void $\ast$addr, int len)
+\item 
+int \hyperlink{loader_2src_2util_8c_ab0861eca69488783c03d10dd318bb02d}{util\+\_\+socket\+\_\+and\+\_\+bind} (struct \hyperlink{structserver}{server} $\ast$srv)
+\item 
+int \hyperlink{loader_2src_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}{util\+\_\+memsearch} (char $\ast$buf, int buf\+\_\+len, char $\ast$mem, int mem\+\_\+len)
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{loader_2src_2util_8c_a60f0f1eeffd8695d82a60c980fc3adbd}{util\+\_\+sockprintf} (int fd, const char $\ast$fmt,...)
+\item 
+char $\ast$ \hyperlink{loader_2src_2util_8c_a0656af878d67b08b1e94a9562d896f78}{util\+\_\+trim} (char $\ast$str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{loader/src/util.\+c@{loader/src/util.\+c}!hex\+Dump@{hex\+Dump}}
+\index{hex\+Dump@{hex\+Dump}!loader/src/util.\+c@{loader/src/util.\+c}}
+\subsubsection[{\texorpdfstring{hex\+Dump(char $\ast$desc, void $\ast$addr, int len)}{hexDump(char *desc, void *addr, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void hex\+Dump (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{desc, }
+\item[{void $\ast$}]{addr, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{loader_2src_2util_8c_af1bddd272ab58d596235a98a58df8c46}{}\label{loader_2src_2util_8c_af1bddd272ab58d596235a98a58df8c46}
+
+
+Definition at line 12 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loader_2src_2util_8c_af1bddd272ab58d596235a98a58df8c46_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{loader/src/util.\+c@{loader/src/util.\+c}!util\+\_\+memsearch@{util\+\_\+memsearch}}
+\index{util\+\_\+memsearch@{util\+\_\+memsearch}!loader/src/util.\+c@{loader/src/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+memsearch(char $\ast$buf, int buf\+\_\+len, char $\ast$mem, int mem\+\_\+len)}{util_memsearch(char *buf, int buf_len, char *mem, int mem_len)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+memsearch (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{buf\+\_\+len, }
+\item[{char $\ast$}]{mem, }
+\item[{int}]{mem\+\_\+len}
+\end{DoxyParamCaption}
+)}\hypertarget{loader_2src_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}{}\label{loader_2src_2util_8c_ae46c9b71f57c253f2ba79ce6bd168c4d}
+
+
+Definition at line 111 of file util.\+c.
+
+\index{loader/src/util.\+c@{loader/src/util.\+c}!util\+\_\+socket\+\_\+and\+\_\+bind@{util\+\_\+socket\+\_\+and\+\_\+bind}}
+\index{util\+\_\+socket\+\_\+and\+\_\+bind@{util\+\_\+socket\+\_\+and\+\_\+bind}!loader/src/util.\+c@{loader/src/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+socket\+\_\+and\+\_\+bind(struct server $\ast$srv)}{util_socket_and_bind(struct server *srv)}}]{\setlength{\rightskip}{0pt plus 5cm}int util\+\_\+socket\+\_\+and\+\_\+bind (
+\begin{DoxyParamCaption}
+\item[{struct {\bf server} $\ast$}]{srv}
+\end{DoxyParamCaption}
+)}\hypertarget{loader_2src_2util_8c_ab0861eca69488783c03d10dd318bb02d}{}\label{loader_2src_2util_8c_ab0861eca69488783c03d10dd318bb02d}
+
+
+Definition at line 64 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loader_2src_2util_8c_ab0861eca69488783c03d10dd318bb02d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{loader/src/util.\+c@{loader/src/util.\+c}!util\+\_\+sockprintf@{util\+\_\+sockprintf}}
+\index{util\+\_\+sockprintf@{util\+\_\+sockprintf}!loader/src/util.\+c@{loader/src/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+sockprintf(int fd, const char $\ast$fmt,...)}{util_sockprintf(int fd, const char *fmt,...)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} util\+\_\+sockprintf (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{loader_2src_2util_8c_a60f0f1eeffd8695d82a60c980fc3adbd}{}\label{loader_2src_2util_8c_a60f0f1eeffd8695d82a60c980fc3adbd}
+
+
+Definition at line 132 of file util.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{loader_2src_2util_8c_a60f0f1eeffd8695d82a60c980fc3adbd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loader_2src_2util_8c_a60f0f1eeffd8695d82a60c980fc3adbd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{loader/src/util.\+c@{loader/src/util.\+c}!util\+\_\+trim@{util\+\_\+trim}}
+\index{util\+\_\+trim@{util\+\_\+trim}!loader/src/util.\+c@{loader/src/util.\+c}}
+\subsubsection[{\texorpdfstring{util\+\_\+trim(char $\ast$str)}{util_trim(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ util\+\_\+trim (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{loader_2src_2util_8c_a0656af878d67b08b1e94a9562d896f78}{}\label{loader_2src_2util_8c_a0656af878d67b08b1e94a9562d896f78}
+
+
+Definition at line 157 of file util.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{loader_2src_2util_8c_a0656af878d67b08b1e94a9562d896f78_icgraph}
+\end{center}
+\end{figure}
+
+

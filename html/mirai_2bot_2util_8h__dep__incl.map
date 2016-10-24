@@ -1,0 +1,11 @@
+<map id="mirai/bot/util.h" name="mirai/bot/util.h">
+<area shape="rect" id="node2" href="$attack_8c.html" title="mirai/bot/attack.c" alt="" coords="5,79,127,104"/>
+<area shape="rect" id="node3" href="$attack__app_8c.html" title="mirai/bot/attack_app.c" alt="" coords="152,79,304,104"/>
+<area shape="rect" id="node4" href="$attack__gre_8c.html" title="mirai/bot/attack_gre.c" alt="" coords="328,79,477,104"/>
+<area shape="rect" id="node5" href="$attack__udp_8c.html" title="mirai/bot/attack_udp.c" alt="" coords="501,79,653,104"/>
+<area shape="rect" id="node6" href="$killer_8c.html" title="mirai/bot/killer.c" alt="" coords="676,79,790,104"/>
+<area shape="rect" id="node7" href="$mirai_2bot_2main_8c.html" title="mirai/bot/main.c" alt="" coords="814,79,929,104"/>
+<area shape="rect" id="node8" href="$resolv_8c.html" title="mirai/bot/resolv.c" alt="" coords="954,79,1075,104"/>
+<area shape="rect" id="node9" href="$table_8c.html" title="mirai/bot/table.c" alt="" coords="1099,79,1215,104"/>
+<area shape="rect" id="node10" href="$mirai_2bot_2util_8c.html" title="mirai/bot/util.c" alt="" coords="1239,79,1342,104"/>
+</map>

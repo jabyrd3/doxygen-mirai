@@ -1,0 +1,6 @@
+<map id="loader" name="loader">
+<area shape="rect" id="node2" href="$single__load_8c.html#a25b6b0d5a233ac0249fe798020e9d86a" title="getConnectedSockets" alt="" coords="113,5,265,31"/>
+<area shape="rect" id="node3" href="$single__load_8c.html#aa3595475b02d25686ffadbcf19472db2" title="handle_failed_connect" alt="" coords="112,55,267,80"/>
+<area shape="rect" id="node4" href="$single__load_8c.html#adb74e74784f00b371ac2b6174ee15593" title="handle_timeout" alt="" coords="133,104,245,129"/>
+<area shape="rect" id="node5" href="$single__load_8c.html#ab5a5480e7ca5603df2e3fb59300b966a" title="closeAndCleanup" alt="" coords="126,153,252,179"/>
+</map>

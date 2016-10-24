@@ -1,0 +1,117 @@
+\hypertarget{scanner_8h}{}\section{mirai/bot/scanner.h File Reference}
+\label{scanner_8h}\index{mirai/bot/scanner.\+h@{mirai/bot/scanner.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+Include dependency graph for scanner.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{scanner_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{scanner_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structscanner__auth}{scanner\+\_\+auth}
+\item 
+struct \hyperlink{structscanner__connection}{scanner\+\_\+connection}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{scanner_8h_a1a530c3cd75361d34847e8c60a95312a}{S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS}~128
+\item 
+\#define \hyperlink{scanner_8h_ae5695e717c0094f9c301920bbb4215b0}{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS}~160
+\item 
+\#define \hyperlink{scanner_8h_a001f7782e8f74809d4ccfa093bc7e01f}{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}~256
+\item 
+\#define \hyperlink{scanner_8h_abe3044a3b818d1ea8d557651f569cf91}{S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN}~64
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{scanner_8h_aec54f69564fbbbac5032deae9361438a}{scanner\+\_\+init} ()
+\item 
+void \hyperlink{scanner_8h_a73754b0ee96be3722127b3c7e0be8350}{scanner\+\_\+kill} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{scanner.\+h@{scanner.\+h}!S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN@{S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN}}
+\index{S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN@{S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN}{SCANNER_HACK_DRAIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+N\+N\+E\+R\+\_\+\+H\+A\+C\+K\+\_\+\+D\+R\+A\+IN~64}\hypertarget{scanner_8h_abe3044a3b818d1ea8d557651f569cf91}{}\label{scanner_8h_abe3044a3b818d1ea8d557651f569cf91}
+
+
+Definition at line 16 of file scanner.\+h.
+
+\index{scanner.\+h@{scanner.\+h}!S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS@{S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS}}
+\index{S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS@{S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS}{SCANNER_MAX_CONNS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+N\+N\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+NS~128}\hypertarget{scanner_8h_a1a530c3cd75361d34847e8c60a95312a}{}\label{scanner_8h_a1a530c3cd75361d34847e8c60a95312a}
+
+
+Definition at line 11 of file scanner.\+h.
+
+\index{scanner.\+h@{scanner.\+h}!S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS@{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS}}
+\index{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS@{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS}{SCANNER_RAW_PPS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+A\+W\+\_\+\+P\+PS~160}\hypertarget{scanner_8h_ae5695e717c0094f9c301920bbb4215b0}{}\label{scanner_8h_ae5695e717c0094f9c301920bbb4215b0}
+
+
+Definition at line 12 of file scanner.\+h.
+
+\index{scanner.\+h@{scanner.\+h}!S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE@{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}}
+\index{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE@{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}{SCANNER_RDBUF_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE~256}\hypertarget{scanner_8h_a001f7782e8f74809d4ccfa093bc7e01f}{}\label{scanner_8h_a001f7782e8f74809d4ccfa093bc7e01f}
+
+
+Definition at line 15 of file scanner.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{scanner.\+h@{scanner.\+h}!scanner\+\_\+init@{scanner\+\_\+init}}
+\index{scanner\+\_\+init@{scanner\+\_\+init}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{scanner\+\_\+init()}{scanner_init()}}]{\setlength{\rightskip}{0pt plus 5cm}void scanner\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{scanner_8h_aec54f69564fbbbac5032deae9361438a}{}\label{scanner_8h_aec54f69564fbbbac5032deae9361438a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{scanner_8h_aec54f69564fbbbac5032deae9361438a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{scanner.\+h@{scanner.\+h}!scanner\+\_\+kill@{scanner\+\_\+kill}}
+\index{scanner\+\_\+kill@{scanner\+\_\+kill}!scanner.\+h@{scanner.\+h}}
+\subsubsection[{\texorpdfstring{scanner\+\_\+kill(void)}{scanner_kill(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void scanner\+\_\+kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{scanner_8h_a73754b0ee96be3722127b3c7e0be8350}{}\label{scanner_8h_a73754b0ee96be3722127b3c7e0be8350}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{scanner_8h_a73754b0ee96be3722127b3c7e0be8350_icgraph}
+\end{center}
+\end{figure}
+
+

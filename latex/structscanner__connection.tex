@@ -1,0 +1,165 @@
+\hypertarget{structscanner__connection}{}\section{scanner\+\_\+connection Struct Reference}
+\label{structscanner__connection}\index{scanner\+\_\+connection@{scanner\+\_\+connection}}
+
+
+{\ttfamily \#include $<$scanner.\+h$>$}
+
+
+
+Collaboration diagram for scanner\+\_\+connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structscanner__connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6571ebc0f8500b41dac3888450c04aef}{S\+C\+\_\+\+C\+L\+O\+S\+ED}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6c2ae26d5acc3c6c2b304f85fdf957fe}{S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04abd814aae97d33efc102c0142b18fca71}{S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a5ac6725b6f791ad21e1025c4a71bd395}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, 
+\\*
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04ad62d526d3a60458eba59a8fee94eb001}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a1155cdcf945030bb96e23ce96f1125d6}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a77a1fdd71aa6cb69704e706d38aa50f7}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a00a8149d447fc754fe6a5bc493646742}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP}, 
+\\*
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af39e1652f227a5f3d10810e1be0c5fbb}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a73b971efad062a45892b513e0683a98b}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP}, 
+\hyperlink{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af0d1ba62d7a0e7c6052ffc728ae99edc}{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structscanner__auth}{scanner\+\_\+auth} $\ast$ \hyperlink{structscanner__connection_ae0f73c6a5c3e1a1ce22822fc88610bff}{auth}
+\item 
+int \hyperlink{structscanner__connection_a6f8059414f0228f0256115e024eeed4b}{fd}
+\item 
+int \hyperlink{structscanner__connection_ad127e56d0e8e42d9e183c7779015c25a}{last\+\_\+recv}
+\item 
+enum scanner\+\_\+connection\+:: \{ ... \}  \hyperlink{structscanner__connection_a139c1a21e3b186670166bd86fd15bbf6}{state}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_aaadf2e480fd246ff9e932039b223baed}{ipv4\+\_\+t} \hyperlink{structscanner__connection_a2d22095a6311539df835109315b37ffe}{dst\+\_\+addr}
+\item 
+uint16\+\_\+t \hyperlink{structscanner__connection_ae18defed4756b8c15e34718f51e86e55}{dst\+\_\+port}
+\item 
+int \hyperlink{structscanner__connection_abd4c86054fbe97fb3b12d233da01798d}{rdbuf\+\_\+pos}
+\item 
+char \hyperlink{structscanner__connection_ab80770ee6fdc6ba2112df048b1d555f2}{rdbuf} \mbox{[}\hyperlink{scanner_8h_a001f7782e8f74809d4ccfa093bc7e01f}{S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structscanner__connection_a5522305c1de4f07a6c6feb7275863f8f}{tries}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file scanner.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+C\+\_\+\+C\+L\+O\+S\+ED@{S\+C\+\_\+\+C\+L\+O\+S\+ED}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+C\+L\+O\+S\+ED@{S\+C\+\_\+\+C\+L\+O\+S\+ED}}\item[{\em 
+S\+C\+\_\+\+C\+L\+O\+S\+ED\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6571ebc0f8500b41dac3888450c04aef}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6571ebc0f8500b41dac3888450c04aef}
+}]\index{S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}}\item[{\em 
+S\+C\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6c2ae26d5acc3c6c2b304f85fdf957fe}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a6c2ae26d5acc3c6c2b304f85fdf957fe}
+}]\index{S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS@{S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS@{S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS}}\item[{\em 
+S\+C\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+I\+A\+CS\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04abd814aae97d33efc102c0142b18fca71}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04abd814aae97d33efc102c0142b18fca71}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+U\+S\+E\+R\+N\+A\+ME\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a5ac6725b6f791ad21e1025c4a71bd395}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a5ac6725b6f791ad21e1025c4a71bd395}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+O\+RD\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04ad62d526d3a60458eba59a8fee94eb001}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04ad62d526d3a60458eba59a8fee94eb001}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+P\+A\+S\+S\+W\+D\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a1155cdcf945030bb96e23ce96f1125d6}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a1155cdcf945030bb96e23ce96f1125d6}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a77a1fdd71aa6cb69704e706d38aa50f7}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a77a1fdd71aa6cb69704e706d38aa50f7}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a00a8149d447fc754fe6a5bc493646742}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a00a8149d447fc754fe6a5bc493646742}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+E\+L\+L\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af39e1652f227a5f3d10810e1be0c5fbb}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af39e1652f227a5f3d10810e1be0c5fbb}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+S\+H\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a73b971efad062a45892b513e0683a98b}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04a73b971efad062a45892b513e0683a98b}
+}]\index{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP}!scanner\+\_\+connection@{scanner\+\_\+connection}}\index{scanner\+\_\+connection@{scanner\+\_\+connection}!S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP@{S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP}}\item[{\em 
+S\+C\+\_\+\+W\+A\+I\+T\+I\+N\+G\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+SP\hypertarget{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af0d1ba62d7a0e7c6052ffc728ae99edc}{}\label{structscanner__connection_abc6126af1d45847bc59afa0aa3216b04af0d1ba62d7a0e7c6052ffc728ae99edc}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 28 of file scanner.\+h.
+
+
+
+\subsection{Field Documentation}
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!auth@{auth}}
+\index{auth@{auth}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{auth}{auth}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf scanner\+\_\+auth}$\ast$ auth}\hypertarget{structscanner__connection_ae0f73c6a5c3e1a1ce22822fc88610bff}{}\label{structscanner__connection_ae0f73c6a5c3e1a1ce22822fc88610bff}
+
+
+Definition at line 26 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!dst\+\_\+addr@{dst\+\_\+addr}}
+\index{dst\+\_\+addr@{dst\+\_\+addr}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{dst\+\_\+addr}{dst_addr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipv4\+\_\+t} dst\+\_\+addr}\hypertarget{structscanner__connection_a2d22095a6311539df835109315b37ffe}{}\label{structscanner__connection_a2d22095a6311539df835109315b37ffe}
+
+
+Definition at line 41 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!dst\+\_\+port@{dst\+\_\+port}}
+\index{dst\+\_\+port@{dst\+\_\+port}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{dst\+\_\+port}{dst_port}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t dst\+\_\+port}\hypertarget{structscanner__connection_ae18defed4756b8c15e34718f51e86e55}{}\label{structscanner__connection_ae18defed4756b8c15e34718f51e86e55}
+
+
+Definition at line 42 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!fd@{fd}}
+\index{fd@{fd}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{fd}{fd}}]{\setlength{\rightskip}{0pt plus 5cm}int fd}\hypertarget{structscanner__connection_a6f8059414f0228f0256115e024eeed4b}{}\label{structscanner__connection_a6f8059414f0228f0256115e024eeed4b}
+
+
+Definition at line 27 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!last\+\_\+recv@{last\+\_\+recv}}
+\index{last\+\_\+recv@{last\+\_\+recv}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{last\+\_\+recv}{last_recv}}]{\setlength{\rightskip}{0pt plus 5cm}int last\+\_\+recv}\hypertarget{structscanner__connection_ad127e56d0e8e42d9e183c7779015c25a}{}\label{structscanner__connection_ad127e56d0e8e42d9e183c7779015c25a}
+
+
+Definition at line 27 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{rdbuf}{rdbuf}}]{\setlength{\rightskip}{0pt plus 5cm}char rdbuf\mbox{[}{\bf S\+C\+A\+N\+N\+E\+R\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structscanner__connection_ab80770ee6fdc6ba2112df048b1d555f2}{}\label{structscanner__connection_ab80770ee6fdc6ba2112df048b1d555f2}
+
+
+Definition at line 44 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!rdbuf\+\_\+pos@{rdbuf\+\_\+pos}}
+\index{rdbuf\+\_\+pos@{rdbuf\+\_\+pos}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{rdbuf\+\_\+pos}{rdbuf_pos}}]{\setlength{\rightskip}{0pt plus 5cm}int rdbuf\+\_\+pos}\hypertarget{structscanner__connection_abd4c86054fbe97fb3b12d233da01798d}{}\label{structscanner__connection_abd4c86054fbe97fb3b12d233da01798d}
+
+
+Definition at line 43 of file scanner.\+h.
+
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!state@{state}}
+\index{state@{state}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   state}\hypertarget{structscanner__connection_a139c1a21e3b186670166bd86fd15bbf6}{}\label{structscanner__connection_a139c1a21e3b186670166bd86fd15bbf6}
+\index{scanner\+\_\+connection@{scanner\+\_\+connection}!tries@{tries}}
+\index{tries@{tries}!scanner\+\_\+connection@{scanner\+\_\+connection}}
+\subsubsection[{\texorpdfstring{tries}{tries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t tries}\hypertarget{structscanner__connection_a5522305c1de4f07a6c6feb7275863f8f}{}\label{structscanner__connection_a5522305c1de4f07a6c6feb7275863f8f}
+
+
+Definition at line 45 of file scanner.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mirai/bot/\hyperlink{scanner_8h}{scanner.\+h}\end{DoxyCompactItemize}

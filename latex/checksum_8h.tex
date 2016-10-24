@@ -1,0 +1,81 @@
+\hypertarget{checksum_8h}{}\section{mirai/bot/checksum.h File Reference}
+\label{checksum_8h}\index{mirai/bot/checksum.\+h@{mirai/bot/checksum.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$linux/ip.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+Include dependency graph for checksum.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{checksum_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{checksum_8h_a991e488e072f61f621ca62a396f35275}{checksum\+\_\+generic} (uint16\+\_\+t $\ast$, uint32\+\_\+t)
+\item 
+uint16\+\_\+t \hyperlink{checksum_8h_a288f6203de98e22c26336def33d4500f}{checksum\+\_\+tcpudp} (struct iphdr $\ast$, void $\ast$, uint16\+\_\+t, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{checksum.\+h@{checksum.\+h}!checksum\+\_\+generic@{checksum\+\_\+generic}}
+\index{checksum\+\_\+generic@{checksum\+\_\+generic}!checksum.\+h@{checksum.\+h}}
+\subsubsection[{\texorpdfstring{checksum\+\_\+generic(uint16\+\_\+t $\ast$, uint32\+\_\+t)}{checksum_generic(uint16_t *, uint32_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t checksum\+\_\+generic (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t $\ast$}]{, }
+\item[{uint32\+\_\+t}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{checksum_8h_a991e488e072f61f621ca62a396f35275}{}\label{checksum_8h_a991e488e072f61f621ca62a396f35275}
+
+
+Definition at line 9 of file checksum.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8h_a991e488e072f61f621ca62a396f35275_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{checksum.\+h@{checksum.\+h}!checksum\+\_\+tcpudp@{checksum\+\_\+tcpudp}}
+\index{checksum\+\_\+tcpudp@{checksum\+\_\+tcpudp}!checksum.\+h@{checksum.\+h}}
+\subsubsection[{\texorpdfstring{checksum\+\_\+tcpudp(struct iphdr $\ast$, void $\ast$, uint16\+\_\+t, int)}{checksum_tcpudp(struct iphdr *, void *, uint16_t, int)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t checksum\+\_\+tcpudp (
+\begin{DoxyParamCaption}
+\item[{struct iphdr $\ast$}]{, }
+\item[{void $\ast$}]{, }
+\item[{uint16\+\_\+t}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{checksum_8h_a288f6203de98e22c26336def33d4500f}{}\label{checksum_8h_a288f6203de98e22c26336def33d4500f}
+
+
+Definition at line 24 of file checksum.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checksum_8h_a288f6203de98e22c26336def33d4500f_icgraph}
+\end{center}
+\end{figure}
+
+

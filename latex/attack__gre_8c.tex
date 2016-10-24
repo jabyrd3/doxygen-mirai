@@ -1,0 +1,123 @@
+\hypertarget{attack__gre_8c}{}\section{mirai/bot/attack\+\_\+gre.c File Reference}
+\label{attack__gre_8c}\index{mirai/bot/attack\+\_\+gre.\+c@{mirai/bot/attack\+\_\+gre.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$linux/ip.\+h$>$}\\*
+{\ttfamily \#include $<$linux/if\+\_\+ether.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}attack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}checksum.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+Include dependency graph for attack\+\_\+gre.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__gre_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{attack__gre_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{attack__gre_8c_a3a9dc878dd7cbfa5959f22c5d2d68ff4}{attack\+\_\+gre\+\_\+ip} (uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\item 
+void \hyperlink{attack__gre_8c_a7d1cfe315fdf22b4aba9967eb153cc6c}{attack\+\_\+gre\+\_\+eth} (uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{attack__gre_8c_a369266c24eacffb87046522897a570d5}{}\label{attack__gre_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file attack\+\_\+gre.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}!attack\+\_\+gre\+\_\+eth@{attack\+\_\+gre\+\_\+eth}}
+\index{attack\+\_\+gre\+\_\+eth@{attack\+\_\+gre\+\_\+eth}!attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+gre\+\_\+eth(uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_gre_eth(uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+gre\+\_\+eth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack__gre_8c_a7d1cfe315fdf22b4aba9967eb153cc6c}{}\label{attack__gre_8c_a7d1cfe315fdf22b4aba9967eb153cc6c}
+
+
+Definition at line 162 of file attack\+\_\+gre.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__gre_8c_a7d1cfe315fdf22b4aba9967eb153cc6c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{attack__gre_8c_a7d1cfe315fdf22b4aba9967eb153cc6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}!attack\+\_\+gre\+\_\+ip@{attack\+\_\+gre\+\_\+ip}}
+\index{attack\+\_\+gre\+\_\+ip@{attack\+\_\+gre\+\_\+ip}!attack\+\_\+gre.\+c@{attack\+\_\+gre.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+gre\+\_\+ip(uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_gre_ip(uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+gre\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack__gre_8c_a3a9dc878dd7cbfa5959f22c5d2d68ff4}{}\label{attack__gre_8c_a3a9dc878dd7cbfa5959f22c5d2d68ff4}
+
+
+Definition at line 20 of file attack\+\_\+gre.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__gre_8c_a3a9dc878dd7cbfa5959f22c5d2d68ff4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{attack__gre_8c_a3a9dc878dd7cbfa5959f22c5d2d68ff4_icgraph}
+\end{center}
+\end{figure}
+
+

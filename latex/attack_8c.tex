@@ -1,0 +1,323 @@
+\hypertarget{attack_8c}{}\section{mirai/bot/attack.c File Reference}
+\label{attack_8c}\index{mirai/bot/attack.\+c@{mirai/bot/attack.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}attack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scanner.\+h\char`\"{}}\\*
+Include dependency graph for attack.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{attack_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{attack_8c_ad99d6dee9df7ab3929a42a3e011cbf3b}{attack\+\_\+init} (void)
+\item 
+void \hyperlink{attack_8c_acf00fa745202d52753ab2b2b9b7b1e09}{attack\+\_\+kill\+\_\+all} (void)
+\item 
+void \hyperlink{attack_8c_a5371fded25466f711e2d1b3c3fdf17c7}{attack\+\_\+parse} (char $\ast$buf, int len)
+\item 
+void \hyperlink{attack_8c_a5631e1ae5b2170dabea1d03c816e9885}{attack\+\_\+start} (int duration, \hyperlink{attack_8h_a0fb3d519486301242753dc8e7f175683}{A\+T\+T\+A\+C\+K\+\_\+\+V\+E\+C\+T\+OR} vector, uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\item 
+char $\ast$ \hyperlink{attack_8c_a79b03d7c093d14a1640b2e5bcf2c3c38}{attack\+\_\+get\+\_\+opt\+\_\+str} (uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts, uint8\+\_\+t opt, char $\ast$def)
+\item 
+int \hyperlink{attack_8c_ab59e5bf31f63eeb001f8ec1278a15907}{attack\+\_\+get\+\_\+opt\+\_\+int} (uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts, uint8\+\_\+t opt, int def)
+\item 
+uint32\+\_\+t \hyperlink{attack_8c_a51262dda96f2861dbd13fc0b6f0a31d3}{attack\+\_\+get\+\_\+opt\+\_\+ip} (uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts, uint8\+\_\+t opt, uint32\+\_\+t def)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{attack_8c_ad3932419efa41f4f3ce7ab4e91ff5f6e}{methods\+\_\+len} = 0
+\item 
+struct \hyperlink{structattack__method}{attack\+\_\+method} $\ast$$\ast$ \hyperlink{attack_8c_a126c018b410f7361fff77d10000a8f20}{methods} = N\+U\+LL
+\item 
+int \hyperlink{attack_8c_a46485849828585ce0cad92273523730c}{attack\+\_\+ongoing} \mbox{[}\hyperlink{attack_8h_a7c4eacf15bd06764a0834171b5d6789f}{A\+T\+T\+A\+C\+K\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+M\+AX}\mbox{]} = \{0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{attack.\+c@{attack.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{attack_8c_a369266c24eacffb87046522897a570d5}{}\label{attack_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file attack.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{attack.\+c@{attack.\+c}!attack\+\_\+get\+\_\+opt\+\_\+int@{attack\+\_\+get\+\_\+opt\+\_\+int}}
+\index{attack\+\_\+get\+\_\+opt\+\_\+int@{attack\+\_\+get\+\_\+opt\+\_\+int}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+get\+\_\+opt\+\_\+int(uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts, uint8\+\_\+t opt, int def)}{attack_get_opt_int(uint8_t opts_len, struct attack_option *opts, uint8_t opt, int def)}}]{\setlength{\rightskip}{0pt plus 5cm}int attack\+\_\+get\+\_\+opt\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts, }
+\item[{uint8\+\_\+t}]{opt, }
+\item[{int}]{def}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_ab59e5bf31f63eeb001f8ec1278a15907}{}\label{attack_8c_ab59e5bf31f63eeb001f8ec1278a15907}
+
+
+Definition at line 206 of file attack.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{attack_8c_ab59e5bf31f63eeb001f8ec1278a15907_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack_8c_ab59e5bf31f63eeb001f8ec1278a15907_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+get\+\_\+opt\+\_\+ip@{attack\+\_\+get\+\_\+opt\+\_\+ip}}
+\index{attack\+\_\+get\+\_\+opt\+\_\+ip@{attack\+\_\+get\+\_\+opt\+\_\+ip}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+get\+\_\+opt\+\_\+ip(uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts, uint8\+\_\+t opt, uint32\+\_\+t def)}{attack_get_opt_ip(uint8_t opts_len, struct attack_option *opts, uint8_t opt, uint32_t def)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t attack\+\_\+get\+\_\+opt\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts, }
+\item[{uint8\+\_\+t}]{opt, }
+\item[{uint32\+\_\+t}]{def}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_a51262dda96f2861dbd13fc0b6f0a31d3}{}\label{attack_8c_a51262dda96f2861dbd13fc0b6f0a31d3}
+
+
+Definition at line 216 of file attack.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{attack_8c_a51262dda96f2861dbd13fc0b6f0a31d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack_8c_a51262dda96f2861dbd13fc0b6f0a31d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+get\+\_\+opt\+\_\+str@{attack\+\_\+get\+\_\+opt\+\_\+str}}
+\index{attack\+\_\+get\+\_\+opt\+\_\+str@{attack\+\_\+get\+\_\+opt\+\_\+str}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+get\+\_\+opt\+\_\+str(uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts, uint8\+\_\+t opt, char $\ast$def)}{attack_get_opt_str(uint8_t opts_len, struct attack_option *opts, uint8_t opt, char *def)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ attack\+\_\+get\+\_\+opt\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts, }
+\item[{uint8\+\_\+t}]{opt, }
+\item[{char $\ast$}]{def}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_a79b03d7c093d14a1640b2e5bcf2c3c38}{}\label{attack_8c_a79b03d7c093d14a1640b2e5bcf2c3c38}
+
+
+Definition at line 193 of file attack.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack_8c_a79b03d7c093d14a1640b2e5bcf2c3c38_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+init@{attack\+\_\+init}}
+\index{attack\+\_\+init@{attack\+\_\+init}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+init(void)}{attack_init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} attack\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_ad99d6dee9df7ab3929a42a3e011cbf3b}{}\label{attack_8c_ad99d6dee9df7ab3929a42a3e011cbf3b}
+
+
+Definition at line 22 of file attack.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{attack_8c_ad99d6dee9df7ab3929a42a3e011cbf3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{attack_8c_ad99d6dee9df7ab3929a42a3e011cbf3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+kill\+\_\+all@{attack\+\_\+kill\+\_\+all}}
+\index{attack\+\_\+kill\+\_\+all@{attack\+\_\+kill\+\_\+all}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+kill\+\_\+all(void)}{attack_kill_all(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+kill\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_acf00fa745202d52753ab2b2b9b7b1e09}{}\label{attack_8c_acf00fa745202d52753ab2b2b9b7b1e09}
+
+
+Definition at line 44 of file attack.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{attack_8c_acf00fa745202d52753ab2b2b9b7b1e09_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{attack_8c_acf00fa745202d52753ab2b2b9b7b1e09_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+parse@{attack\+\_\+parse}}
+\index{attack\+\_\+parse@{attack\+\_\+parse}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+parse(char $\ast$buf, int len)}{attack_parse(char *buf, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+parse (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_a5371fded25466f711e2d1b3c3fdf17c7}{}\label{attack_8c_a5371fded25466f711e2d1b3c3fdf17c7}
+
+
+Definition at line 64 of file attack.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{attack_8c_a5371fded25466f711e2d1b3c3fdf17c7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{attack_8c_a5371fded25466f711e2d1b3c3fdf17c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack.\+c@{attack.\+c}!attack\+\_\+start@{attack\+\_\+start}}
+\index{attack\+\_\+start@{attack\+\_\+start}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+start(int duration, A\+T\+T\+A\+C\+K\+\_\+\+V\+E\+C\+T\+O\+R vector, uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_start(int duration, ATTACK_VECTOR vector, uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{int}]{duration, }
+\item[{{\bf A\+T\+T\+A\+C\+K\+\_\+\+V\+E\+C\+T\+OR}}]{vector, }
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack_8c_a5631e1ae5b2170dabea1d03c816e9885}{}\label{attack_8c_a5631e1ae5b2170dabea1d03c816e9885}
+
+
+Definition at line 155 of file attack.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{attack_8c_a5631e1ae5b2170dabea1d03c816e9885_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{attack.\+c@{attack.\+c}!attack\+\_\+ongoing@{attack\+\_\+ongoing}}
+\index{attack\+\_\+ongoing@{attack\+\_\+ongoing}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+ongoing}{attack_ongoing}}]{\setlength{\rightskip}{0pt plus 5cm}int attack\+\_\+ongoing\mbox{[}{\bf A\+T\+T\+A\+C\+K\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+M\+AX}\mbox{]} = \{0\}}\hypertarget{attack_8c_a46485849828585ce0cad92273523730c}{}\label{attack_8c_a46485849828585ce0cad92273523730c}
+
+
+Definition at line 20 of file attack.\+c.
+
+\index{attack.\+c@{attack.\+c}!methods@{methods}}
+\index{methods@{methods}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{methods}{methods}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf attack\+\_\+method}$\ast$$\ast$ methods = N\+U\+LL}\hypertarget{attack_8c_a126c018b410f7361fff77d10000a8f20}{}\label{attack_8c_a126c018b410f7361fff77d10000a8f20}
+
+
+Definition at line 19 of file attack.\+c.
+
+\index{attack.\+c@{attack.\+c}!methods\+\_\+len@{methods\+\_\+len}}
+\index{methods\+\_\+len@{methods\+\_\+len}!attack.\+c@{attack.\+c}}
+\subsubsection[{\texorpdfstring{methods\+\_\+len}{methods_len}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t methods\+\_\+len = 0}\hypertarget{attack_8c_ad3932419efa41f4f3ce7ab4e91ff5f6e}{}\label{attack_8c_ad3932419efa41f4f3ce7ab4e91ff5f6e}
+
+
+Definition at line 18 of file attack.\+c.
+

@@ -1,0 +1,162 @@
+\hypertarget{attack__tcp_8c}{}\section{mirai/bot/attack\+\_\+tcp.c File Reference}
+\label{attack__tcp_8c}\index{mirai/bot/attack\+\_\+tcp.\+c@{mirai/bot/attack\+\_\+tcp.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$linux/ip.\+h$>$}\\*
+{\ttfamily \#include $<$linux/tcp.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}attack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}checksum.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+Include dependency graph for attack\+\_\+tcp.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__tcp_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{attack__tcp_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{attack__tcp_8c_ae8f0b5db75e6158068cb8cbb2b79cf70}{attack\+\_\+tcp\+\_\+syn} (uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\item 
+void \hyperlink{attack__tcp_8c_a1195433a4eb190cddc7d0b7643bb3a9b}{attack\+\_\+tcp\+\_\+ack} (uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\item 
+void \hyperlink{attack__tcp_8c_a6576962e0ea664ef81c0e70e79a07e0b}{attack\+\_\+tcp\+\_\+stomp} (uint8\+\_\+t targs\+\_\+len, struct \hyperlink{structattack__target}{attack\+\_\+target} $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct \hyperlink{structattack__option}{attack\+\_\+option} $\ast$opts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{attack__tcp_8c_a369266c24eacffb87046522897a570d5}{}\label{attack__tcp_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file attack\+\_\+tcp.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}!attack\+\_\+tcp\+\_\+ack@{attack\+\_\+tcp\+\_\+ack}}
+\index{attack\+\_\+tcp\+\_\+ack@{attack\+\_\+tcp\+\_\+ack}!attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+tcp\+\_\+ack(uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_tcp_ack(uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+tcp\+\_\+ack (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack__tcp_8c_a1195433a4eb190cddc7d0b7643bb3a9b}{}\label{attack__tcp_8c_a1195433a4eb190cddc7d0b7643bb3a9b}
+
+
+Definition at line 161 of file attack\+\_\+tcp.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__tcp_8c_a1195433a4eb190cddc7d0b7643bb3a9b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{attack__tcp_8c_a1195433a4eb190cddc7d0b7643bb3a9b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}!attack\+\_\+tcp\+\_\+stomp@{attack\+\_\+tcp\+\_\+stomp}}
+\index{attack\+\_\+tcp\+\_\+stomp@{attack\+\_\+tcp\+\_\+stomp}!attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+tcp\+\_\+stomp(uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_tcp_stomp(uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+tcp\+\_\+stomp (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack__tcp_8c_a6576962e0ea664ef81c0e70e79a07e0b}{}\label{attack__tcp_8c_a6576962e0ea664ef81c0e70e79a07e0b}
+
+
+Definition at line 293 of file attack\+\_\+tcp.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__tcp_8c_a6576962e0ea664ef81c0e70e79a07e0b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{attack__tcp_8c_a6576962e0ea664ef81c0e70e79a07e0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}!attack\+\_\+tcp\+\_\+syn@{attack\+\_\+tcp\+\_\+syn}}
+\index{attack\+\_\+tcp\+\_\+syn@{attack\+\_\+tcp\+\_\+syn}!attack\+\_\+tcp.\+c@{attack\+\_\+tcp.\+c}}
+\subsubsection[{\texorpdfstring{attack\+\_\+tcp\+\_\+syn(uint8\+\_\+t targs\+\_\+len, struct attack\+\_\+target $\ast$targs, uint8\+\_\+t opts\+\_\+len, struct attack\+\_\+option $\ast$opts)}{attack_tcp_syn(uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)}}]{\setlength{\rightskip}{0pt plus 5cm}void attack\+\_\+tcp\+\_\+syn (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{targs\+\_\+len, }
+\item[{struct {\bf attack\+\_\+target} $\ast$}]{targs, }
+\item[{uint8\+\_\+t}]{opts\+\_\+len, }
+\item[{struct {\bf attack\+\_\+option} $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}\hypertarget{attack__tcp_8c_ae8f0b5db75e6158068cb8cbb2b79cf70}{}\label{attack__tcp_8c_ae8f0b5db75e6158068cb8cbb2b79cf70}
+
+
+Definition at line 18 of file attack\+\_\+tcp.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{attack__tcp_8c_ae8f0b5db75e6158068cb8cbb2b79cf70_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{attack__tcp_8c_ae8f0b5db75e6158068cb8cbb2b79cf70_icgraph}
+\end{center}
+\end{figure}
+
+

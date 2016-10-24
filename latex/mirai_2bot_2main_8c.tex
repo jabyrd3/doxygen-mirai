@@ -1,0 +1,127 @@
+\hypertarget{mirai_2bot_2main_8c}{}\section{mirai/bot/main.c File Reference}
+\label{mirai_2bot_2main_8c}\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$sys/prctl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/select.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}table.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}attack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}killer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scanner.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}resolv.\+h\char`\"{}}\\*
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mirai_2bot_2main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mirai_2bot_2main_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mirai_2bot_2main_8c_a7a29781a20c5dd4153c3c1cecf0ff328}{main} (int argc, char $\ast$$\ast$args)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct sockaddr\+\_\+in \hyperlink{mirai_2bot_2main_8c_aa7136c236ccd50b9d290ce07d346c47e}{srv\+\_\+addr}
+\item 
+int \hyperlink{mirai_2bot_2main_8c_ad1b7f0c68d8b7ee1f133d9558cb959fd}{fd\+\_\+ctrl} = -\/1
+\item 
+int \hyperlink{mirai_2bot_2main_8c_a70154eec68d82b0477b64fca4c00d5d8}{fd\+\_\+serv} = -\/1
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{mirai_2bot_2main_8c_a37ba2dd197633fbde106f7b6aecab36f}{pending\+\_\+connection} = \hyperlink{mirai_2bot_2includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}
+\item 
+void($\ast$ \hyperlink{mirai_2bot_2main_8c_a80c600b074a0d353624a22a2905d038a}{resolve\+\_\+func} )(void) = (void ($\ast$)(void))\hyperlink{mirai_2bot_2util_8h_a27b56c2508008233898cb5e1766593c1}{util\+\_\+local\+\_\+addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{mirai_2bot_2main_8c_a369266c24eacffb87046522897a570d5}{}\label{mirai_2bot_2main_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file main.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!main@{main}}
+\index{main@{main}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$args)}{main(int argc, char **args)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{args}
+\end{DoxyParamCaption}
+)}\hypertarget{mirai_2bot_2main_8c_a7a29781a20c5dd4153c3c1cecf0ff328}{}\label{mirai_2bot_2main_8c_a7a29781a20c5dd4153c3c1cecf0ff328}
+
+
+Definition at line 47 of file main.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{mirai_2bot_2main_8c_a7a29781a20c5dd4153c3c1cecf0ff328_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!fd\+\_\+ctrl@{fd\+\_\+ctrl}}
+\index{fd\+\_\+ctrl@{fd\+\_\+ctrl}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{fd\+\_\+ctrl}{fd_ctrl}}]{\setlength{\rightskip}{0pt plus 5cm}int fd\+\_\+ctrl = -\/1}\hypertarget{mirai_2bot_2main_8c_ad1b7f0c68d8b7ee1f133d9558cb959fd}{}\label{mirai_2bot_2main_8c_ad1b7f0c68d8b7ee1f133d9558cb959fd}
+
+
+Definition at line 35 of file main.\+c.
+
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!fd\+\_\+serv@{fd\+\_\+serv}}
+\index{fd\+\_\+serv@{fd\+\_\+serv}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{fd\+\_\+serv}{fd_serv}}]{\setlength{\rightskip}{0pt plus 5cm}int fd\+\_\+serv = -\/1}\hypertarget{mirai_2bot_2main_8c_a70154eec68d82b0477b64fca4c00d5d8}{}\label{mirai_2bot_2main_8c_a70154eec68d82b0477b64fca4c00d5d8}
+
+
+Definition at line 35 of file main.\+c.
+
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!pending\+\_\+connection@{pending\+\_\+connection}}
+\index{pending\+\_\+connection@{pending\+\_\+connection}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{pending\+\_\+connection}{pending_connection}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} pending\+\_\+connection = {\bf F\+A\+L\+SE}}\hypertarget{mirai_2bot_2main_8c_a37ba2dd197633fbde106f7b6aecab36f}{}\label{mirai_2bot_2main_8c_a37ba2dd197633fbde106f7b6aecab36f}
+
+
+Definition at line 36 of file main.\+c.
+
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!resolve\+\_\+func@{resolve\+\_\+func}}
+\index{resolve\+\_\+func@{resolve\+\_\+func}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{resolve\+\_\+func}{resolve_func}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ resolve\+\_\+func) (void) = (void ($\ast$)(void)){\bf util\+\_\+local\+\_\+addr}}\hypertarget{mirai_2bot_2main_8c_a80c600b074a0d353624a22a2905d038a}{}\label{mirai_2bot_2main_8c_a80c600b074a0d353624a22a2905d038a}
+
+
+Definition at line 37 of file main.\+c.
+
+\index{mirai/bot/main.\+c@{mirai/bot/main.\+c}!srv\+\_\+addr@{srv\+\_\+addr}}
+\index{srv\+\_\+addr@{srv\+\_\+addr}!mirai/bot/main.\+c@{mirai/bot/main.\+c}}
+\subsubsection[{\texorpdfstring{srv\+\_\+addr}{srv_addr}}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\+\_\+in srv\+\_\+addr}\hypertarget{mirai_2bot_2main_8c_aa7136c236ccd50b9d290ce07d346c47e}{}\label{mirai_2bot_2main_8c_aa7136c236ccd50b9d290ce07d346c47e}
+
+
+Definition at line 34 of file main.\+c.
+

@@ -1,0 +1,205 @@
+\hypertarget{structserver}{}\section{server Struct Reference}
+\label{structserver}\index{server@{server}}
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+
+
+Collaboration diagram for server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structserver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structserver_abea44b0a054946db9343b7af424d143c}{max\+\_\+open}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a86e24d82855089d55604d963f461c68b}{curr\+\_\+open}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a6272db0d7f3ee3172f5908fc6c53f52c}{total\+\_\+input}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a775d7dfa5b4752f9de7d4b1a4f848562}{total\+\_\+logins}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a5dc4c264e773d0bada48651a52c59c47}{total\+\_\+echoes}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_aba6bc4241f091f9fe65a221e47fcae4f}{total\+\_\+wgets}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a366af7f3a5ea2f51a94717763cc60533}{total\+\_\+tftps}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a4077e0ba638cb87bfaa0412929cd8cf6}{total\+\_\+successes}
+\item 
+volatile uint32\+\_\+t \hyperlink{structserver_a9876401c17a01e030d0d1c0cccb081b3}{total\+\_\+failures}
+\item 
+char $\ast$ \hyperlink{structserver_ad37424a0d9627326449581b932597c1d}{wget\+\_\+host\+\_\+ip}
+\item 
+char $\ast$ \hyperlink{structserver_a084b7a7e8a34f91c71fa99a1985f8e3a}{tftp\+\_\+host\+\_\+ip}
+\item 
+struct \hyperlink{structserver__worker}{server\+\_\+worker} $\ast$ \hyperlink{structserver_a3dd96237dccb83d96d674007e2cef801}{workers}
+\item 
+struct \hyperlink{structconnection}{connection} $\ast$$\ast$ \hyperlink{structserver_aa7312b497a8b28d32a2f854e73564342}{estab\+\_\+conns}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_aaadf2e480fd246ff9e932039b223baed}{ipv4\+\_\+t} $\ast$ \hyperlink{structserver_a8a3fd504da6b2635eba92ed2e3c53b17}{bind\+\_\+addrs}
+\item 
+pthread\+\_\+t \hyperlink{structserver_a672086e622555f69db447ee87ffb0dee}{to\+\_\+thrd}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_adccb5337cf206fe3eca7c4732f634bb9}{port\+\_\+t} \hyperlink{structserver_a485e81def97a840a7f0ee2635e46bf07}{wget\+\_\+host\+\_\+port}
+\item 
+uint8\+\_\+t \hyperlink{structserver_ab76231f9ee81a6400b7ac02155895274}{workers\+\_\+len}
+\item 
+uint8\+\_\+t \hyperlink{structserver_a9b4b0a9ca9692a41f452b322803adea4}{bind\+\_\+addrs\+\_\+len}
+\item 
+int \hyperlink{structserver_a47a6e54254224e795f4fea558dcfbc3a}{curr\+\_\+worker\+\_\+child}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file server.\+h.
+
+
+
+\subsection{Field Documentation}
+\index{server@{server}!bind\+\_\+addrs@{bind\+\_\+addrs}}
+\index{bind\+\_\+addrs@{bind\+\_\+addrs}!server@{server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+addrs}{bind_addrs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipv4\+\_\+t}$\ast$ bind\+\_\+addrs}\hypertarget{structserver_a8a3fd504da6b2635eba92ed2e3c53b17}{}\label{structserver_a8a3fd504da6b2635eba92ed2e3c53b17}
+
+
+Definition at line 15 of file server.\+h.
+
+\index{server@{server}!bind\+\_\+addrs\+\_\+len@{bind\+\_\+addrs\+\_\+len}}
+\index{bind\+\_\+addrs\+\_\+len@{bind\+\_\+addrs\+\_\+len}!server@{server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+addrs\+\_\+len}{bind_addrs_len}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t bind\+\_\+addrs\+\_\+len}\hypertarget{structserver_a9b4b0a9ca9692a41f452b322803adea4}{}\label{structserver_a9b4b0a9ca9692a41f452b322803adea4}
+
+
+Definition at line 18 of file server.\+h.
+
+\index{server@{server}!curr\+\_\+open@{curr\+\_\+open}}
+\index{curr\+\_\+open@{curr\+\_\+open}!server@{server}}
+\subsubsection[{\texorpdfstring{curr\+\_\+open}{curr_open}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t curr\+\_\+open}\hypertarget{structserver_a86e24d82855089d55604d963f461c68b}{}\label{structserver_a86e24d82855089d55604d963f461c68b}
+
+
+Definition at line 10 of file server.\+h.
+
+\index{server@{server}!curr\+\_\+worker\+\_\+child@{curr\+\_\+worker\+\_\+child}}
+\index{curr\+\_\+worker\+\_\+child@{curr\+\_\+worker\+\_\+child}!server@{server}}
+\subsubsection[{\texorpdfstring{curr\+\_\+worker\+\_\+child}{curr_worker_child}}]{\setlength{\rightskip}{0pt plus 5cm}int curr\+\_\+worker\+\_\+child}\hypertarget{structserver_a47a6e54254224e795f4fea558dcfbc3a}{}\label{structserver_a47a6e54254224e795f4fea558dcfbc3a}
+
+
+Definition at line 19 of file server.\+h.
+
+\index{server@{server}!estab\+\_\+conns@{estab\+\_\+conns}}
+\index{estab\+\_\+conns@{estab\+\_\+conns}!server@{server}}
+\subsubsection[{\texorpdfstring{estab\+\_\+conns}{estab_conns}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf connection}$\ast$$\ast$ estab\+\_\+conns}\hypertarget{structserver_aa7312b497a8b28d32a2f854e73564342}{}\label{structserver_aa7312b497a8b28d32a2f854e73564342}
+
+
+Definition at line 14 of file server.\+h.
+
+\index{server@{server}!max\+\_\+open@{max\+\_\+open}}
+\index{max\+\_\+open@{max\+\_\+open}!server@{server}}
+\subsubsection[{\texorpdfstring{max\+\_\+open}{max_open}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t max\+\_\+open}\hypertarget{structserver_abea44b0a054946db9343b7af424d143c}{}\label{structserver_abea44b0a054946db9343b7af424d143c}
+
+
+Definition at line 9 of file server.\+h.
+
+\index{server@{server}!tftp\+\_\+host\+\_\+ip@{tftp\+\_\+host\+\_\+ip}}
+\index{tftp\+\_\+host\+\_\+ip@{tftp\+\_\+host\+\_\+ip}!server@{server}}
+\subsubsection[{\texorpdfstring{tftp\+\_\+host\+\_\+ip}{tftp_host_ip}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ tftp\+\_\+host\+\_\+ip}\hypertarget{structserver_a084b7a7e8a34f91c71fa99a1985f8e3a}{}\label{structserver_a084b7a7e8a34f91c71fa99a1985f8e3a}
+
+
+Definition at line 12 of file server.\+h.
+
+\index{server@{server}!to\+\_\+thrd@{to\+\_\+thrd}}
+\index{to\+\_\+thrd@{to\+\_\+thrd}!server@{server}}
+\subsubsection[{\texorpdfstring{to\+\_\+thrd}{to_thrd}}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+t to\+\_\+thrd}\hypertarget{structserver_a672086e622555f69db447ee87ffb0dee}{}\label{structserver_a672086e622555f69db447ee87ffb0dee}
+
+
+Definition at line 16 of file server.\+h.
+
+\index{server@{server}!total\+\_\+echoes@{total\+\_\+echoes}}
+\index{total\+\_\+echoes@{total\+\_\+echoes}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+echoes}{total_echoes}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+echoes}\hypertarget{structserver_a5dc4c264e773d0bada48651a52c59c47}{}\label{structserver_a5dc4c264e773d0bada48651a52c59c47}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+failures@{total\+\_\+failures}}
+\index{total\+\_\+failures@{total\+\_\+failures}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+failures}{total_failures}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+failures}\hypertarget{structserver_a9876401c17a01e030d0d1c0cccb081b3}{}\label{structserver_a9876401c17a01e030d0d1c0cccb081b3}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+input@{total\+\_\+input}}
+\index{total\+\_\+input@{total\+\_\+input}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+input}{total_input}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+input}\hypertarget{structserver_a6272db0d7f3ee3172f5908fc6c53f52c}{}\label{structserver_a6272db0d7f3ee3172f5908fc6c53f52c}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+logins@{total\+\_\+logins}}
+\index{total\+\_\+logins@{total\+\_\+logins}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+logins}{total_logins}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+logins}\hypertarget{structserver_a775d7dfa5b4752f9de7d4b1a4f848562}{}\label{structserver_a775d7dfa5b4752f9de7d4b1a4f848562}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+successes@{total\+\_\+successes}}
+\index{total\+\_\+successes@{total\+\_\+successes}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+successes}{total_successes}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+successes}\hypertarget{structserver_a4077e0ba638cb87bfaa0412929cd8cf6}{}\label{structserver_a4077e0ba638cb87bfaa0412929cd8cf6}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+tftps@{total\+\_\+tftps}}
+\index{total\+\_\+tftps@{total\+\_\+tftps}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+tftps}{total_tftps}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+tftps}\hypertarget{structserver_a366af7f3a5ea2f51a94717763cc60533}{}\label{structserver_a366af7f3a5ea2f51a94717763cc60533}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!total\+\_\+wgets@{total\+\_\+wgets}}
+\index{total\+\_\+wgets@{total\+\_\+wgets}!server@{server}}
+\subsubsection[{\texorpdfstring{total\+\_\+wgets}{total_wgets}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\+\_\+t total\+\_\+wgets}\hypertarget{structserver_aba6bc4241f091f9fe65a221e47fcae4f}{}\label{structserver_aba6bc4241f091f9fe65a221e47fcae4f}
+
+
+Definition at line 11 of file server.\+h.
+
+\index{server@{server}!wget\+\_\+host\+\_\+ip@{wget\+\_\+host\+\_\+ip}}
+\index{wget\+\_\+host\+\_\+ip@{wget\+\_\+host\+\_\+ip}!server@{server}}
+\subsubsection[{\texorpdfstring{wget\+\_\+host\+\_\+ip}{wget_host_ip}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ wget\+\_\+host\+\_\+ip}\hypertarget{structserver_ad37424a0d9627326449581b932597c1d}{}\label{structserver_ad37424a0d9627326449581b932597c1d}
+
+
+Definition at line 12 of file server.\+h.
+
+\index{server@{server}!wget\+\_\+host\+\_\+port@{wget\+\_\+host\+\_\+port}}
+\index{wget\+\_\+host\+\_\+port@{wget\+\_\+host\+\_\+port}!server@{server}}
+\subsubsection[{\texorpdfstring{wget\+\_\+host\+\_\+port}{wget_host_port}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\+\_\+t} wget\+\_\+host\+\_\+port}\hypertarget{structserver_a485e81def97a840a7f0ee2635e46bf07}{}\label{structserver_a485e81def97a840a7f0ee2635e46bf07}
+
+
+Definition at line 17 of file server.\+h.
+
+\index{server@{server}!workers@{workers}}
+\index{workers@{workers}!server@{server}}
+\subsubsection[{\texorpdfstring{workers}{workers}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf server\+\_\+worker}$\ast$ workers}\hypertarget{structserver_a3dd96237dccb83d96d674007e2cef801}{}\label{structserver_a3dd96237dccb83d96d674007e2cef801}
+
+
+Definition at line 13 of file server.\+h.
+
+\index{server@{server}!workers\+\_\+len@{workers\+\_\+len}}
+\index{workers\+\_\+len@{workers\+\_\+len}!server@{server}}
+\subsubsection[{\texorpdfstring{workers\+\_\+len}{workers_len}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t workers\+\_\+len}\hypertarget{structserver_ab76231f9ee81a6400b7ac02155895274}{}\label{structserver_ab76231f9ee81a6400b7ac02155895274}
+
+
+Definition at line 18 of file server.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+loader/src/headers/\hyperlink{server_8h}{server.\+h}\end{DoxyCompactItemize}

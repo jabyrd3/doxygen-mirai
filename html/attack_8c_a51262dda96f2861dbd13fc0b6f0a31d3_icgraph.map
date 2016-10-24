@@ -1,0 +1,6 @@
+<map id="attack_get_opt_ip" name="attack_get_opt_ip">
+<area shape="rect" id="node2" href="$attack__tcp_8c.html#ae8f0b5db75e6158068cb8cbb2b79cf70" title="attack_tcp_syn" alt="" coords="180,5,290,31"/>
+<area shape="rect" id="node5" href="$attack__tcp_8c.html#a1195433a4eb190cddc7d0b7643bb3a9b" title="attack_tcp_ack" alt="" coords="180,55,290,80"/>
+<area shape="rect" id="node3" href="$attack_8h.html#ad99d6dee9df7ab3929a42a3e011cbf3b" title="attack_init" alt="" coords="338,31,420,56"/>
+<area shape="rect" id="node4" href="$mirai_2bot_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="468,31,518,56"/>
+</map>

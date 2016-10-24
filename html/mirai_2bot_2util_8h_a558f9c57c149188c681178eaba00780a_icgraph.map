@@ -1,0 +1,17 @@
+<map id="util_strlen" name="util_strlen">
+<area shape="rect" id="node2" href="$mirai_2bot_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="826,358,877,384"/>
+<area shape="rect" id="node3" href="$mirai_2bot_2util_8h.html#a9ddf87ee9893a3d074e8644883966695" title="util_strncmp" alt="" coords="181,181,275,206"/>
+<area shape="rect" id="node4" href="$attack__app_8c.html#ac056a9e6d9091948be545036513e2831" title="attack_app_http" alt="" coords="528,157,645,182"/>
+<area shape="rect" id="node6" href="$mirai_2bot_2util_8h.html#a4f6e693e4e26e8e2586385e9dfca2888" title="util_strcmp" alt="" coords="381,54,467,80"/>
+<area shape="rect" id="node8" href="$mirai_2bot_2util_8h.html#a4e5b43a8e9aaaa5e973463f2809b018e" title="util_strcpy" alt="" coords="187,409,269,434"/>
+<area shape="rect" id="node10" href="$attack__app_8c.html#ac0b695b984c357e6a8940ddcbaae0ada" title="attack_app_cfnull" alt="" coords="524,561,649,586"/>
+<area shape="rect" id="node11" href="$killer_8h.html#a70cc97402b8dbc02403795ed2e847332" title="killer_kill_by_port" alt="" coords="525,460,648,485"/>
+<area shape="rect" id="node12" href="$mirai_2bot_2util_8h.html#afc7e7575cdd65dbc59137b5975ca993a" title="util_stristr" alt="" coords="385,257,463,282"/>
+<area shape="rect" id="node14" href="$attack__udp_8c.html#af4838345a6f7e7f58242ab40fb5db337" title="attack_udp_dns" alt="" coords="170,308,286,333"/>
+<area shape="rect" id="node15" href="$resolv_8h.html#ade52787a8ded09b2ce907f4e3c5c56ef" title="resolv_domain_to_hostname" alt="" coords="132,713,324,738"/>
+<area shape="rect" id="node16" href="$resolv_8h.html#a28840567d7f01bcb6fd86b208780e0a9" title="resolv_lookup" alt="" coords="372,713,476,738"/>
+<area shape="rect" id="node5" href="$attack_8h.html#ad99d6dee9df7ab3929a42a3e011cbf3b" title="attack_init" alt="" coords="697,257,778,282"/>
+<area shape="rect" id="node7" href="$killer_8h.html#a7aff3a01b70d598231e41f7b3e333c50" title="killer_init" alt="" coords="701,358,774,384"/>
+<area shape="rect" id="node9" href="$mirai_2bot_2util_8h.html#a507bf3408b4b056c6b63dbe327962b94" title="util_itoa" alt="" coords="390,510,458,536"/>
+<area shape="rect" id="node13" href="$attack__udp_8c.html#a2ae93178cf46b6119023167ffc8bd226" title="attack_udp_plain" alt="" coords="525,206,648,232"/>
+</map>

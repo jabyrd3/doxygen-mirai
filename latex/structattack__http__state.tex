@@ -1,0 +1,195 @@
+\hypertarget{structattack__http__state}{}\section{attack\+\_\+http\+\_\+state Struct Reference}
+\label{structattack__http__state}\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+
+
+{\ttfamily \#include $<$attack.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structattack__http__state_a6f8059414f0228f0256115e024eeed4b}{fd}
+\item 
+uint8\+\_\+t \hyperlink{structattack__http__state_a0b57aa10271a66f3dc936bba1d2f3830}{state}
+\item 
+int \hyperlink{structattack__http__state_ad127e56d0e8e42d9e183c7779015c25a}{last\+\_\+recv}
+\item 
+int \hyperlink{structattack__http__state_a04740a05fb3dde2a4f4fc74ebd900715}{last\+\_\+send}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_aaadf2e480fd246ff9e932039b223baed}{ipv4\+\_\+t} \hyperlink{structattack__http__state_a2d22095a6311539df835109315b37ffe}{dst\+\_\+addr}
+\item 
+char \hyperlink{structattack__http__state_ad822f3afc6ca96d5e6968831ba0c9d25}{user\+\_\+agent} \mbox{[}512\mbox{]}
+\item 
+char \hyperlink{structattack__http__state_a216095570e2e489ac34fde8ed76a7c72}{path} \mbox{[}\hyperlink{attack_8h_a0b7ec3c5170952fe1071a9326cd51264}{H\+T\+T\+P\+\_\+\+P\+A\+T\+H\+\_\+\+M\+AX}+1\mbox{]}
+\item 
+char \hyperlink{structattack__http__state_a68d155fe5b39db18852b16d2fdaf1edc}{domain} \mbox{[}\hyperlink{attack_8h_af13bc0acf7afcddfcc5098dbe5c343aa}{H\+T\+T\+P\+\_\+\+D\+O\+M\+A\+I\+N\+\_\+\+M\+AX}+1\mbox{]}
+\item 
+char \hyperlink{structattack__http__state_ae3764fb7c9266b7fcf63ac9213c956d3}{postdata} \mbox{[}\hyperlink{attack_8h_af6a49c502e37f3f5dfc390f758dedc38}{H\+T\+T\+P\+\_\+\+P\+O\+S\+T\+\_\+\+M\+AX}+1\mbox{]}
+\item 
+char \hyperlink{structattack__http__state_a60da5898c1c16be193f45cd8feacba92}{method} \mbox{[}9\mbox{]}
+\item 
+char \hyperlink{structattack__http__state_a398e2066f28cd1b1cb239a08538f47bf}{orig\+\_\+method} \mbox{[}9\mbox{]}
+\item 
+int \hyperlink{structattack__http__state_a0065f11b6f92dfe81a17ad6d00c38e56}{protection\+\_\+type}
+\item 
+int \hyperlink{structattack__http__state_ae314c4b48027be9feab52906b6313b73}{keepalive}
+\item 
+int \hyperlink{structattack__http__state_a9fc0096dd38d9cc699740cf0adb6e6f4}{chunked}
+\item 
+int \hyperlink{structattack__http__state_a675a47f46ecd9d8ec01c738e04c28cbe}{content\+\_\+length}
+\item 
+int \hyperlink{structattack__http__state_ab111b3821877d2ab73beb1361177bf39}{num\+\_\+cookies}
+\item 
+char \hyperlink{structattack__http__state_a5748f13b817aec88794a184c67b44863}{cookies} \mbox{[}\hyperlink{attack_8h_a7afb6e2da31b70aad81a3a8c4cce03ac}{H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+M\+AX}\mbox{]}\mbox{[}\hyperlink{attack_8h_a843d2259e52b51843a2abe0bfb764dc4}{H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+L\+E\+N\+\_\+\+M\+AX}\mbox{]}
+\item 
+int \hyperlink{structattack__http__state_abd4c86054fbe97fb3b12d233da01798d}{rdbuf\+\_\+pos}
+\item 
+char \hyperlink{structattack__http__state_af25afdcfe34a5d58999517c10dd10b08}{rdbuf} \mbox{[}\hyperlink{attack_8h_ac6eda2a3273daf4a93162bb51f969093}{H\+T\+T\+P\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 108 of file attack.\+h.
+
+
+
+\subsection{Field Documentation}
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!chunked@{chunked}}
+\index{chunked@{chunked}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{chunked}{chunked}}]{\setlength{\rightskip}{0pt plus 5cm}int chunked}\hypertarget{structattack__http__state_a9fc0096dd38d9cc699740cf0adb6e6f4}{}\label{structattack__http__state_a9fc0096dd38d9cc699740cf0adb6e6f4}
+
+
+Definition at line 124 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!content\+\_\+length@{content\+\_\+length}}
+\index{content\+\_\+length@{content\+\_\+length}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{content\+\_\+length}{content_length}}]{\setlength{\rightskip}{0pt plus 5cm}int content\+\_\+length}\hypertarget{structattack__http__state_a675a47f46ecd9d8ec01c738e04c28cbe}{}\label{structattack__http__state_a675a47f46ecd9d8ec01c738e04c28cbe}
+
+
+Definition at line 125 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!cookies@{cookies}}
+\index{cookies@{cookies}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{cookies}{cookies}}]{\setlength{\rightskip}{0pt plus 5cm}char cookies\mbox{[}{\bf H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+M\+AX}\mbox{]}\mbox{[}{\bf H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+L\+E\+N\+\_\+\+M\+AX}\mbox{]}}\hypertarget{structattack__http__state_a5748f13b817aec88794a184c67b44863}{}\label{structattack__http__state_a5748f13b817aec88794a184c67b44863}
+
+
+Definition at line 128 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!domain@{domain}}
+\index{domain@{domain}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{domain}{domain}}]{\setlength{\rightskip}{0pt plus 5cm}char domain\mbox{[}{\bf H\+T\+T\+P\+\_\+\+D\+O\+M\+A\+I\+N\+\_\+\+M\+AX}+1\mbox{]}}\hypertarget{structattack__http__state_a68d155fe5b39db18852b16d2fdaf1edc}{}\label{structattack__http__state_a68d155fe5b39db18852b16d2fdaf1edc}
+
+
+Definition at line 116 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!dst\+\_\+addr@{dst\+\_\+addr}}
+\index{dst\+\_\+addr@{dst\+\_\+addr}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{dst\+\_\+addr}{dst_addr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipv4\+\_\+t} dst\+\_\+addr}\hypertarget{structattack__http__state_a2d22095a6311539df835109315b37ffe}{}\label{structattack__http__state_a2d22095a6311539df835109315b37ffe}
+
+
+Definition at line 113 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!fd@{fd}}
+\index{fd@{fd}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{fd}{fd}}]{\setlength{\rightskip}{0pt plus 5cm}int fd}\hypertarget{structattack__http__state_a6f8059414f0228f0256115e024eeed4b}{}\label{structattack__http__state_a6f8059414f0228f0256115e024eeed4b}
+
+
+Definition at line 109 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!keepalive@{keepalive}}
+\index{keepalive@{keepalive}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{keepalive}{keepalive}}]{\setlength{\rightskip}{0pt plus 5cm}int keepalive}\hypertarget{structattack__http__state_ae314c4b48027be9feab52906b6313b73}{}\label{structattack__http__state_ae314c4b48027be9feab52906b6313b73}
+
+
+Definition at line 123 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!last\+\_\+recv@{last\+\_\+recv}}
+\index{last\+\_\+recv@{last\+\_\+recv}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{last\+\_\+recv}{last_recv}}]{\setlength{\rightskip}{0pt plus 5cm}int last\+\_\+recv}\hypertarget{structattack__http__state_ad127e56d0e8e42d9e183c7779015c25a}{}\label{structattack__http__state_ad127e56d0e8e42d9e183c7779015c25a}
+
+
+Definition at line 111 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!last\+\_\+send@{last\+\_\+send}}
+\index{last\+\_\+send@{last\+\_\+send}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{last\+\_\+send}{last_send}}]{\setlength{\rightskip}{0pt plus 5cm}int last\+\_\+send}\hypertarget{structattack__http__state_a04740a05fb3dde2a4f4fc74ebd900715}{}\label{structattack__http__state_a04740a05fb3dde2a4f4fc74ebd900715}
+
+
+Definition at line 112 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!method@{method}}
+\index{method@{method}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{method}{method}}]{\setlength{\rightskip}{0pt plus 5cm}char method\mbox{[}9\mbox{]}}\hypertarget{structattack__http__state_a60da5898c1c16be193f45cd8feacba92}{}\label{structattack__http__state_a60da5898c1c16be193f45cd8feacba92}
+
+
+Definition at line 118 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!num\+\_\+cookies@{num\+\_\+cookies}}
+\index{num\+\_\+cookies@{num\+\_\+cookies}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{num\+\_\+cookies}{num_cookies}}]{\setlength{\rightskip}{0pt plus 5cm}int num\+\_\+cookies}\hypertarget{structattack__http__state_ab111b3821877d2ab73beb1361177bf39}{}\label{structattack__http__state_ab111b3821877d2ab73beb1361177bf39}
+
+
+Definition at line 127 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!orig\+\_\+method@{orig\+\_\+method}}
+\index{orig\+\_\+method@{orig\+\_\+method}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{orig\+\_\+method}{orig_method}}]{\setlength{\rightskip}{0pt plus 5cm}char orig\+\_\+method\mbox{[}9\mbox{]}}\hypertarget{structattack__http__state_a398e2066f28cd1b1cb239a08538f47bf}{}\label{structattack__http__state_a398e2066f28cd1b1cb239a08538f47bf}
+
+
+Definition at line 119 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!path@{path}}
+\index{path@{path}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{path}{path}}]{\setlength{\rightskip}{0pt plus 5cm}char path\mbox{[}{\bf H\+T\+T\+P\+\_\+\+P\+A\+T\+H\+\_\+\+M\+AX}+1\mbox{]}}\hypertarget{structattack__http__state_a216095570e2e489ac34fde8ed76a7c72}{}\label{structattack__http__state_a216095570e2e489ac34fde8ed76a7c72}
+
+
+Definition at line 115 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!postdata@{postdata}}
+\index{postdata@{postdata}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{postdata}{postdata}}]{\setlength{\rightskip}{0pt plus 5cm}char postdata\mbox{[}{\bf H\+T\+T\+P\+\_\+\+P\+O\+S\+T\+\_\+\+M\+AX}+1\mbox{]}}\hypertarget{structattack__http__state_ae3764fb7c9266b7fcf63ac9213c956d3}{}\label{structattack__http__state_ae3764fb7c9266b7fcf63ac9213c956d3}
+
+
+Definition at line 117 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!protection\+\_\+type@{protection\+\_\+type}}
+\index{protection\+\_\+type@{protection\+\_\+type}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{protection\+\_\+type}{protection_type}}]{\setlength{\rightskip}{0pt plus 5cm}int protection\+\_\+type}\hypertarget{structattack__http__state_a0065f11b6f92dfe81a17ad6d00c38e56}{}\label{structattack__http__state_a0065f11b6f92dfe81a17ad6d00c38e56}
+
+
+Definition at line 121 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{rdbuf}{rdbuf}}]{\setlength{\rightskip}{0pt plus 5cm}char rdbuf\mbox{[}{\bf H\+T\+T\+P\+\_\+\+R\+D\+B\+U\+F\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structattack__http__state_af25afdcfe34a5d58999517c10dd10b08}{}\label{structattack__http__state_af25afdcfe34a5d58999517c10dd10b08}
+
+
+Definition at line 131 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!rdbuf\+\_\+pos@{rdbuf\+\_\+pos}}
+\index{rdbuf\+\_\+pos@{rdbuf\+\_\+pos}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{rdbuf\+\_\+pos}{rdbuf_pos}}]{\setlength{\rightskip}{0pt plus 5cm}int rdbuf\+\_\+pos}\hypertarget{structattack__http__state_abd4c86054fbe97fb3b12d233da01798d}{}\label{structattack__http__state_abd4c86054fbe97fb3b12d233da01798d}
+
+
+Definition at line 130 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!state@{state}}
+\index{state@{state}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t state}\hypertarget{structattack__http__state_a0b57aa10271a66f3dc936bba1d2f3830}{}\label{structattack__http__state_a0b57aa10271a66f3dc936bba1d2f3830}
+
+
+Definition at line 110 of file attack.\+h.
+
+\index{attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}!user\+\_\+agent@{user\+\_\+agent}}
+\index{user\+\_\+agent@{user\+\_\+agent}!attack\+\_\+http\+\_\+state@{attack\+\_\+http\+\_\+state}}
+\subsubsection[{\texorpdfstring{user\+\_\+agent}{user_agent}}]{\setlength{\rightskip}{0pt plus 5cm}char user\+\_\+agent\mbox{[}512\mbox{]}}\hypertarget{structattack__http__state_ad822f3afc6ca96d5e6968831ba0c9d25}{}\label{structattack__http__state_ad822f3afc6ca96d5e6968831ba0c9d25}
+
+
+Definition at line 114 of file attack.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mirai/bot/\hyperlink{attack_8h}{attack.\+h}\end{DoxyCompactItemize}

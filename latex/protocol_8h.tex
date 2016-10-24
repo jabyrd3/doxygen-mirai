@@ -1,0 +1,171 @@
+\hypertarget{protocol_8h}{}\section{mirai/bot/protocol.h File Reference}
+\label{protocol_8h}\index{mirai/bot/protocol.\+h@{mirai/bot/protocol.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+Include dependency graph for protocol.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{protocol_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdnshdr}{dnshdr}
+\item 
+struct \hyperlink{structdns__question}{dns\+\_\+question}
+\item 
+struct \hyperlink{structdns__resource}{dns\+\_\+resource}
+\item 
+struct \hyperlink{structgrehdr}{grehdr}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a83ac410cc49f839586f7c3f67c82a8fd}{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A}~1
+\item 
+\#define \hyperlink{protocol_8h_a901b19f9dfb79c07984d5f8bf8b2a62c}{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP}~1
+\item 
+\#define \hyperlink{protocol_8h_ab91986408c0f98872f75c052941a3450}{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP}~1
+\item 
+\#define \hyperlink{protocol_8h_a0ac41cedcfd51c915345550521966281}{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS}~2
+\item 
+\#define \hyperlink{protocol_8h_af4ea7ee9b6b8b13a589a2276719c1ea6}{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS}~3
+\item 
+\#define \hyperlink{protocol_8h_a7685648be6843dc7a65440e8696044d1}{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK}~4
+\item 
+\#define \hyperlink{protocol_8h_a8922d59dda5c9af3f4d0dd3ac311846d}{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL}~8
+\item 
+\#define \hyperlink{protocol_8h_a2eab7a2ef2f26d9b33693927a6295780}{P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH}~0x6558
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdns__resource}{dns\+\_\+resource} \hyperlink{protocol_8h_a80d53026847193bc864e21924dca6a2d}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((packed))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{protocol_8h_acb5cfd209ba75c853d03f701e7f91679}{type}
+\item 
+uint16\+\_\+t \hyperlink{protocol_8h_a5cbab6ffdacd763a7c1ebe95e4722014}{\+\_\+class}
+\item 
+uint32\+\_\+t \hyperlink{protocol_8h_a48b9f3382e0929bbd75cda2bf2838126}{ttl}
+\item 
+uint16\+\_\+t \hyperlink{protocol_8h_ad1a572736a10ff6b282c5f43c4ea1ccf}{data\+\_\+len}
+\item 
+struct \hyperlink{structgrehdr}{grehdr} \hyperlink{protocol_8h_a12c188e47edf7f0d758a87409351bd54}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP@{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP}}
+\index{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP@{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP}{PROTO_DNS_QCLASS_IP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+C\+L\+A\+S\+S\+\_\+\+IP~1}\hypertarget{protocol_8h_a901b19f9dfb79c07984d5f8bf8b2a62c}{}\label{protocol_8h_a901b19f9dfb79c07984d5f8bf8b2a62c}
+
+
+Definition at line 26 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A@{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A}}
+\index{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A@{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A}{PROTO_DNS_QTYPE_A}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+D\+N\+S\+\_\+\+Q\+T\+Y\+P\+E\+\_\+A~1}\hypertarget{protocol_8h_a83ac410cc49f839586f7c3f67c82a8fd}{}\label{protocol_8h_a83ac410cc49f839586f7c3f67c82a8fd}
+
+
+Definition at line 25 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH@{P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH}}
+\index{P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH@{P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH}{PROTO_GRE_TRANS_ETH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+G\+R\+E\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+TH~0x6558}\hypertarget{protocol_8h_a2eab7a2ef2f26d9b33693927a6295780}{}\label{protocol_8h_a2eab7a2ef2f26d9b33693927a6295780}
+
+
+Definition at line 34 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS}}
+\index{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS}{PROTO_TCP_OPT_MSS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+M\+SS~2}\hypertarget{protocol_8h_a0ac41cedcfd51c915345550521966281}{}\label{protocol_8h_a0ac41cedcfd51c915345550521966281}
+
+
+Definition at line 29 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP}}
+\index{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP}{PROTO_TCP_OPT_NOP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+N\+OP~1}\hypertarget{protocol_8h_ab91986408c0f98872f75c052941a3450}{}\label{protocol_8h_ab91986408c0f98872f75c052941a3450}
+
+
+Definition at line 28 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK}}
+\index{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK}{PROTO_TCP_OPT_SACK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+S\+A\+CK~4}\hypertarget{protocol_8h_a7685648be6843dc7a65440e8696044d1}{}\label{protocol_8h_a7685648be6843dc7a65440e8696044d1}
+
+
+Definition at line 31 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL}}
+\index{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL}{PROTO_TCP_OPT_TSVAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+T\+S\+V\+AL~8}\hypertarget{protocol_8h_a8922d59dda5c9af3f4d0dd3ac311846d}{}\label{protocol_8h_a8922d59dda5c9af3f4d0dd3ac311846d}
+
+
+Definition at line 32 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS}}
+\index{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS@{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS}{PROTO_TCP_OPT_WSS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+O\+P\+T\+\_\+\+W\+SS~3}\hypertarget{protocol_8h_af4ea7ee9b6b8b13a589a2276719c1ea6}{}\label{protocol_8h_af4ea7ee9b6b8b13a589a2276719c1ea6}
+
+
+Definition at line 30 of file protocol.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{protocol.\+h@{protocol.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+((packed))}{__attribute__((packed))}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dns\+\_\+resource} \+\_\+\+\_\+attribute\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a80d53026847193bc864e21924dca6a2d}{}\label{protocol_8h_a80d53026847193bc864e21924dca6a2d}
+
+
+\subsection{Variable Documentation}
+\index{protocol.\+h@{protocol.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+}{__attribute__}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf grehdr}  \+\_\+\+\_\+attribute\+\_\+\+\_\+}\hypertarget{protocol_8h_a12c188e47edf7f0d758a87409351bd54}{}\label{protocol_8h_a12c188e47edf7f0d758a87409351bd54}
+\index{protocol.\+h@{protocol.\+h}!\+\_\+class@{\+\_\+class}}
+\index{\+\_\+class@{\+\_\+class}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+class}{_class}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t \+\_\+class}\hypertarget{protocol_8h_a5cbab6ffdacd763a7c1ebe95e4722014}{}\label{protocol_8h_a5cbab6ffdacd763a7c1ebe95e4722014}
+
+
+Definition at line 481 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!data\+\_\+len@{data\+\_\+len}}
+\index{data\+\_\+len@{data\+\_\+len}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{data\+\_\+len}{data_len}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+len}\hypertarget{protocol_8h_ad1a572736a10ff6b282c5f43c4ea1ccf}{}\label{protocol_8h_ad1a572736a10ff6b282c5f43c4ea1ccf}
+
+
+Definition at line 483 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!ttl@{ttl}}
+\index{ttl@{ttl}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{ttl}{ttl}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t ttl}\hypertarget{protocol_8h_a48b9f3382e0929bbd75cda2bf2838126}{}\label{protocol_8h_a48b9f3382e0929bbd75cda2bf2838126}
+
+
+Definition at line 482 of file protocol.\+h.
+
+\index{protocol.\+h@{protocol.\+h}!type@{type}}
+\index{type@{type}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{\texorpdfstring{type}{type}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t type}\hypertarget{protocol_8h_acb5cfd209ba75c853d03f701e7f91679}{}\label{protocol_8h_acb5cfd209ba75c853d03f701e7f91679}
+
+
+Definition at line 481 of file protocol.\+h.
+

@@ -1,0 +1,9 @@
+<map id="util_sockprintf" name="util_sockprintf">
+<area shape="rect" id="node2" href="$connection_8h.html#a9dbd998ccf8ca5a677d860ae6ea83344" title="connection_consume\l_psoutput" alt="" coords="167,5,315,44"/>
+<area shape="rect" id="node3" href="$server_8c.html#a87188a72b71cc1291721d426413f1290" title="server_telnet_probe" alt="" coords="374,127,514,152"/>
+<area shape="rect" id="node6" href="$connection_8h.html#a1cabdc0c7a73b41b2e51e515f61bf5db" title="connection_consume\l_mounts" alt="" coords="167,120,315,159"/>
+<area shape="rect" id="node7" href="$connection_8h.html#ab6b2144735ba2c7cedf9b93b4a1927db" title="connection_consume\l_written_dirs" alt="" coords="167,183,315,221"/>
+<area shape="rect" id="node8" href="$connection_8h.html#a04dc8c68e7380236df79de3e1dc1d8bc" title="connection_upload_echo" alt="" coords="156,245,326,271"/>
+<area shape="rect" id="node4" href="$server_8c.html#a619e9617d6a9c0458a29c25761a31fd1" title="server_queue_telnet" alt="" coords="562,127,705,152"/>
+<area shape="rect" id="node5" href="$loader_2src_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="753,127,803,152"/>
+</map>

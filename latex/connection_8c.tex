@@ -1,0 +1,682 @@
+\hypertarget{connection_8c}{}\section{loader/src/connection.c File Reference}
+\label{connection_8c}\index{loader/src/connection.\+c@{loader/src/connection.\+c}}
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}headers/includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/connection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/server.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/binary.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/util.\+h\char`\"{}}\\*
+Include dependency graph for connection.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{connection_8c_a162617f2f61ea5b24a221a6cc34d30e1}{connection\+\_\+open} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+void \hyperlink{connection_8c_abfa9e4a1232d41a78e5de0a510ed5752}{connection\+\_\+close} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_ac38d0bc660e02d86ce1dff3855004c09}{connection\+\_\+consume\+\_\+iacs} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a8c48ff1129acb53db3b30a26fd9f6e48}{connection\+\_\+consume\+\_\+login\+\_\+prompt} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a509389938f76d6277ffdb912ca8b4283}{connection\+\_\+consume\+\_\+password\+\_\+prompt} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a52bc8c56bcf36ab89f034f7f6a7e77f1}{connection\+\_\+consume\+\_\+prompt} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a6c25332d5f63d4d1256b55dd786e6295}{connection\+\_\+consume\+\_\+verify\+\_\+login} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a9dbd998ccf8ca5a677d860ae6ea83344}{connection\+\_\+consume\+\_\+psoutput} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a1cabdc0c7a73b41b2e51e515f61bf5db}{connection\+\_\+consume\+\_\+mounts} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_ab6b2144735ba2c7cedf9b93b4a1927db}{connection\+\_\+consume\+\_\+written\+\_\+dirs} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_aa5f67022eedf1d46da7efddad1864ecd}{connection\+\_\+consume\+\_\+copy\+\_\+op} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_ad724b4cf4d0bf51c69f33f6469ee4082}{connection\+\_\+consume\+\_\+arch} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a8727b5c3aab5a5633d98ba86a15bbcfc}{connection\+\_\+consume\+\_\+arm\+\_\+subtype} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a0ee0dff069c76ad003ae238270ac7c5d}{connection\+\_\+consume\+\_\+upload\+\_\+methods} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a04dc8c68e7380236df79de3e1dc1d8bc}{connection\+\_\+upload\+\_\+echo} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_acb23df70b10e82b394c5aea71ce22a28}{connection\+\_\+upload\+\_\+wget} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a409abf934163dd8108edb43f47abca81}{connection\+\_\+upload\+\_\+tftp} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a6f9962c0bc2cedaf0de2814f4a5d4b17}{connection\+\_\+verify\+\_\+payload} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\item 
+int \hyperlink{connection_8c_a53ce7c6113c20961c61bbc6d64eae7c1}{connection\+\_\+consume\+\_\+cleanup} (struct \hyperlink{structconnection}{connection} $\ast$conn)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{connection.\+c@{connection.\+c}!connection\+\_\+close@{connection\+\_\+close}}
+\index{connection\+\_\+close@{connection\+\_\+close}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+close(struct connection $\ast$conn)}{connection_close(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}void connection\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_abfa9e4a1232d41a78e5de0a510ed5752}{}\label{connection_8c_abfa9e4a1232d41a78e5de0a510ed5752}
+
+
+Definition at line 33 of file connection.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_abfa9e4a1232d41a78e5de0a510ed5752_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+arch@{connection\+\_\+consume\+\_\+arch}}
+\index{connection\+\_\+consume\+\_\+arch@{connection\+\_\+consume\+\_\+arch}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+arch(struct connection $\ast$conn)}{connection_consume_arch(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+arch (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_ad724b4cf4d0bf51c69f33f6469ee4082}{}\label{connection_8c_ad724b4cf4d0bf51c69f33f6469ee4082}
+
+
+Definition at line 465 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{connection_8c_ad724b4cf4d0bf51c69f33f6469ee4082_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_ad724b4cf4d0bf51c69f33f6469ee4082_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+arm\+\_\+subtype@{connection\+\_\+consume\+\_\+arm\+\_\+subtype}}
+\index{connection\+\_\+consume\+\_\+arm\+\_\+subtype@{connection\+\_\+consume\+\_\+arm\+\_\+subtype}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+arm\+\_\+subtype(struct connection $\ast$conn)}{connection_consume_arm_subtype(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+arm\+\_\+subtype (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a8727b5c3aab5a5633d98ba86a15bbcfc}{}\label{connection_8c_a8727b5c3aab5a5633d98ba86a15bbcfc}
+
+
+Definition at line 538 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a8727b5c3aab5a5633d98ba86a15bbcfc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a8727b5c3aab5a5633d98ba86a15bbcfc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+cleanup@{connection\+\_\+consume\+\_\+cleanup}}
+\index{connection\+\_\+consume\+\_\+cleanup@{connection\+\_\+consume\+\_\+cleanup}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+cleanup(struct connection $\ast$conn)}{connection_consume_cleanup(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+cleanup (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a53ce7c6113c20961c61bbc6d64eae7c1}{}\label{connection_8c_a53ce7c6113c20961c61bbc6d64eae7c1}
+
+
+Definition at line 643 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a53ce7c6113c20961c61bbc6d64eae7c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a53ce7c6113c20961c61bbc6d64eae7c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+copy\+\_\+op@{connection\+\_\+consume\+\_\+copy\+\_\+op}}
+\index{connection\+\_\+consume\+\_\+copy\+\_\+op@{connection\+\_\+consume\+\_\+copy\+\_\+op}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+copy\+\_\+op(struct connection $\ast$conn)}{connection_consume_copy_op(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+copy\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_aa5f67022eedf1d46da7efddad1864ecd}{}\label{connection_8c_aa5f67022eedf1d46da7efddad1864ecd}
+
+
+Definition at line 456 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_aa5f67022eedf1d46da7efddad1864ecd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_aa5f67022eedf1d46da7efddad1864ecd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+iacs@{connection\+\_\+consume\+\_\+iacs}}
+\index{connection\+\_\+consume\+\_\+iacs@{connection\+\_\+consume\+\_\+iacs}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+iacs(struct connection $\ast$conn)}{connection_consume_iacs(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+iacs (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_ac38d0bc660e02d86ce1dff3855004c09}{}\label{connection_8c_ac38d0bc660e02d86ce1dff3855004c09}
+
+
+Definition at line 87 of file connection.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_ac38d0bc660e02d86ce1dff3855004c09_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+login\+\_\+prompt@{connection\+\_\+consume\+\_\+login\+\_\+prompt}}
+\index{connection\+\_\+consume\+\_\+login\+\_\+prompt@{connection\+\_\+consume\+\_\+login\+\_\+prompt}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+login\+\_\+prompt(struct connection $\ast$conn)}{connection_consume_login_prompt(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+login\+\_\+prompt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a8c48ff1129acb53db3b30a26fd9f6e48}{}\label{connection_8c_a8c48ff1129acb53db3b30a26fd9f6e48}
+
+
+Definition at line 149 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a8c48ff1129acb53db3b30a26fd9f6e48_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a8c48ff1129acb53db3b30a26fd9f6e48_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+mounts@{connection\+\_\+consume\+\_\+mounts}}
+\index{connection\+\_\+consume\+\_\+mounts@{connection\+\_\+consume\+\_\+mounts}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+mounts(struct connection $\ast$conn)}{connection_consume_mounts(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+mounts (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a1cabdc0c7a73b41b2e51e515f61bf5db}{}\label{connection_8c_a1cabdc0c7a73b41b2e51e515f61bf5db}
+
+
+Definition at line 351 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a1cabdc0c7a73b41b2e51e515f61bf5db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a1cabdc0c7a73b41b2e51e515f61bf5db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+password\+\_\+prompt@{connection\+\_\+consume\+\_\+password\+\_\+prompt}}
+\index{connection\+\_\+consume\+\_\+password\+\_\+prompt@{connection\+\_\+consume\+\_\+password\+\_\+prompt}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+password\+\_\+prompt(struct connection $\ast$conn)}{connection_consume_password_prompt(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+password\+\_\+prompt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a509389938f76d6277ffdb912ca8b4283}{}\label{connection_8c_a509389938f76d6277ffdb912ca8b4283}
+
+
+Definition at line 182 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a509389938f76d6277ffdb912ca8b4283_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a509389938f76d6277ffdb912ca8b4283_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+prompt@{connection\+\_\+consume\+\_\+prompt}}
+\index{connection\+\_\+consume\+\_\+prompt@{connection\+\_\+consume\+\_\+prompt}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+prompt(struct connection $\ast$conn)}{connection_consume_prompt(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+prompt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a52bc8c56bcf36ab89f034f7f6a7e77f1}{}\label{connection_8c_a52bc8c56bcf36ab89f034f7f6a7e77f1}
+
+
+Definition at line 213 of file connection.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a52bc8c56bcf36ab89f034f7f6a7e77f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+psoutput@{connection\+\_\+consume\+\_\+psoutput}}
+\index{connection\+\_\+consume\+\_\+psoutput@{connection\+\_\+consume\+\_\+psoutput}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+psoutput(struct connection $\ast$conn)}{connection_consume_psoutput(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+psoutput (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a9dbd998ccf8ca5a677d860ae6ea83344}{}\label{connection_8c_a9dbd998ccf8ca5a677d860ae6ea83344}
+
+
+Definition at line 246 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a9dbd998ccf8ca5a677d860ae6ea83344_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a9dbd998ccf8ca5a677d860ae6ea83344_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+upload\+\_\+methods@{connection\+\_\+consume\+\_\+upload\+\_\+methods}}
+\index{connection\+\_\+consume\+\_\+upload\+\_\+methods@{connection\+\_\+consume\+\_\+upload\+\_\+methods}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+upload\+\_\+methods(struct connection $\ast$conn)}{connection_consume_upload_methods(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+upload\+\_\+methods (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a0ee0dff069c76ad003ae238270ac7c5d}{}\label{connection_8c_a0ee0dff069c76ad003ae238270ac7c5d}
+
+
+Definition at line 556 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a0ee0dff069c76ad003ae238270ac7c5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a0ee0dff069c76ad003ae238270ac7c5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+verify\+\_\+login@{connection\+\_\+consume\+\_\+verify\+\_\+login}}
+\index{connection\+\_\+consume\+\_\+verify\+\_\+login@{connection\+\_\+consume\+\_\+verify\+\_\+login}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+verify\+\_\+login(struct connection $\ast$conn)}{connection_consume_verify_login(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+verify\+\_\+login (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a6c25332d5f63d4d1256b55dd786e6295}{}\label{connection_8c_a6c25332d5f63d4d1256b55dd786e6295}
+
+
+Definition at line 236 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{connection_8c_a6c25332d5f63d4d1256b55dd786e6295_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a6c25332d5f63d4d1256b55dd786e6295_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+consume\+\_\+written\+\_\+dirs@{connection\+\_\+consume\+\_\+written\+\_\+dirs}}
+\index{connection\+\_\+consume\+\_\+written\+\_\+dirs@{connection\+\_\+consume\+\_\+written\+\_\+dirs}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+consume\+\_\+written\+\_\+dirs(struct connection $\ast$conn)}{connection_consume_written_dirs(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+consume\+\_\+written\+\_\+dirs (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_ab6b2144735ba2c7cedf9b93b4a1927db}{}\label{connection_8c_ab6b2144735ba2c7cedf9b93b4a1927db}
+
+
+Definition at line 414 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_ab6b2144735ba2c7cedf9b93b4a1927db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_ab6b2144735ba2c7cedf9b93b4a1927db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+open@{connection\+\_\+open}}
+\index{connection\+\_\+open@{connection\+\_\+open}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+open(struct connection $\ast$conn)}{connection_open(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}void connection\+\_\+open (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a162617f2f61ea5b24a221a6cc34d30e1}{}\label{connection_8c_a162617f2f61ea5b24a221a6cc34d30e1}
+
+
+Definition at line 13 of file connection.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a162617f2f61ea5b24a221a6cc34d30e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+upload\+\_\+echo@{connection\+\_\+upload\+\_\+echo}}
+\index{connection\+\_\+upload\+\_\+echo@{connection\+\_\+upload\+\_\+echo}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+upload\+\_\+echo(struct connection $\ast$conn)}{connection_upload_echo(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+upload\+\_\+echo (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a04dc8c68e7380236df79de3e1dc1d8bc}{}\label{connection_8c_a04dc8c68e7380236df79de3e1dc1d8bc}
+
+
+Definition at line 573 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a04dc8c68e7380236df79de3e1dc1d8bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a04dc8c68e7380236df79de3e1dc1d8bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+upload\+\_\+tftp@{connection\+\_\+upload\+\_\+tftp}}
+\index{connection\+\_\+upload\+\_\+tftp@{connection\+\_\+upload\+\_\+tftp}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+upload\+\_\+tftp(struct connection $\ast$conn)}{connection_upload_tftp(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+upload\+\_\+tftp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a409abf934163dd8108edb43f47abca81}{}\label{connection_8c_a409abf934163dd8108edb43f47abca81}
+
+
+Definition at line 611 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{connection_8c_a409abf934163dd8108edb43f47abca81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a409abf934163dd8108edb43f47abca81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+upload\+\_\+wget@{connection\+\_\+upload\+\_\+wget}}
+\index{connection\+\_\+upload\+\_\+wget@{connection\+\_\+upload\+\_\+wget}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+upload\+\_\+wget(struct connection $\ast$conn)}{connection_upload_wget(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+upload\+\_\+wget (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_acb23df70b10e82b394c5aea71ce22a28}{}\label{connection_8c_acb23df70b10e82b394c5aea71ce22a28}
+
+
+Definition at line 601 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{connection_8c_acb23df70b10e82b394c5aea71ce22a28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_acb23df70b10e82b394c5aea71ce22a28_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{connection.\+c@{connection.\+c}!connection\+\_\+verify\+\_\+payload@{connection\+\_\+verify\+\_\+payload}}
+\index{connection\+\_\+verify\+\_\+payload@{connection\+\_\+verify\+\_\+payload}!connection.\+c@{connection.\+c}}
+\subsubsection[{\texorpdfstring{connection\+\_\+verify\+\_\+payload(struct connection $\ast$conn)}{connection_verify_payload(struct connection *conn)}}]{\setlength{\rightskip}{0pt plus 5cm}int connection\+\_\+verify\+\_\+payload (
+\begin{DoxyParamCaption}
+\item[{struct {\bf connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)}\hypertarget{connection_8c_a6f9962c0bc2cedaf0de2814f4a5d4b17}{}\label{connection_8c_a6f9962c0bc2cedaf0de2814f4a5d4b17}
+
+
+Definition at line 630 of file connection.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{connection_8c_a6f9962c0bc2cedaf0de2814f4a5d4b17_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connection_8c_a6f9962c0bc2cedaf0de2814f4a5d4b17_icgraph}
+\end{center}
+\end{figure}
+
+

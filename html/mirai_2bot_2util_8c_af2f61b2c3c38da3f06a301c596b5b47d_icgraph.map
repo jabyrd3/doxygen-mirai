@@ -1,0 +1,9 @@
+<map id="util_zero" name="util_zero">
+<area shape="rect" id="node2" href="$mirai_2bot_2main_8c.html#a7a29781a20c5dd4153c3c1cecf0ff328" title="main" alt="" coords="450,130,500,155"/>
+<area shape="rect" id="node3" href="$attack__app_8c.html#ac056a9e6d9091948be545036513e2831" title="attack_app_http" alt="" coords="130,30,246,55"/>
+<area shape="rect" id="node5" href="$attack__app_8c.html#ac0b695b984c357e6a8940ddcbaae0ada" title="attack_app_cfnull" alt="" coords="125,79,250,105"/>
+<area shape="rect" id="node6" href="$killer_8h.html#a7aff3a01b70d598231e41f7b3e333c50" title="killer_init" alt="" coords="313,130,387,155"/>
+<area shape="rect" id="node7" href="$killer_8h.html#a70cc97402b8dbc02403795ed2e847332" title="killer_kill_by_port" alt="" coords="126,181,249,206"/>
+<area shape="rect" id="node8" href="$resolv_8h.html#a28840567d7f01bcb6fd86b208780e0a9" title="resolv_lookup" alt="" coords="298,231,402,257"/>
+<area shape="rect" id="node4" href="$attack_8h.html#ad99d6dee9df7ab3929a42a3e011cbf3b" title="attack_init" alt="" coords="309,55,391,81"/>
+</map>

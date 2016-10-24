@@ -1,0 +1,157 @@
+\hypertarget{killer_8h}{}\section{mirai/bot/killer.h File Reference}
+\label{killer_8h}\index{mirai/bot/killer.\+h@{mirai/bot/killer.\+h}}
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+Include dependency graph for killer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{killer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{killer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{killer_8h_a4f4ec16f4a8a2a6c51935a1903bcd7e1}{K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID}~400
+\item 
+\#define \hyperlink{killer_8h_a4853caa194fb8d4260c950c64820b9d1}{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME}~600
+\item 
+\#define \hyperlink{killer_8h_adbe51eea2a5b83ec8a8401bd239b2f11}{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{killer_8h_a7aff3a01b70d598231e41f7b3e333c50}{killer\+\_\+init} (void)
+\item 
+void \hyperlink{killer_8h_a85e87a09323cfec6bc1965b26cb05392}{killer\+\_\+kill} (void)
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{killer_8h_a70cc97402b8dbc02403795ed2e847332}{killer\+\_\+kill\+\_\+by\+\_\+port} (\hyperlink{loader_2src_2headers_2includes_8h_adccb5337cf206fe3eca7c4732f634bb9}{port\+\_\+t})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{killer.\+h@{killer.\+h}!K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID@{K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID}}
+\index{K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID@{K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID}{KILLER_MIN_PID}}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+I\+L\+L\+E\+R\+\_\+\+M\+I\+N\+\_\+\+P\+ID~400}\hypertarget{killer_8h_a4f4ec16f4a8a2a6c51935a1903bcd7e1}{}\label{killer_8h_a4f4ec16f4a8a2a6c51935a1903bcd7e1}
+
+
+Definition at line 5 of file killer.\+h.
+
+\index{killer.\+h@{killer.\+h}!K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET@{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET}}
+\index{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET@{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET}{KILLER_REBIND_TELNET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+B\+I\+N\+D\+\_\+\+T\+E\+L\+N\+ET}\hypertarget{killer_8h_adbe51eea2a5b83ec8a8401bd239b2f11}{}\label{killer_8h_adbe51eea2a5b83ec8a8401bd239b2f11}
+
+
+Definition at line 8 of file killer.\+h.
+
+\index{killer.\+h@{killer.\+h}!K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME@{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME}}
+\index{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME@{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME}{KILLER_RESTART_SCAN_TIME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+I\+L\+L\+E\+R\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+ME~600}\hypertarget{killer_8h_a4853caa194fb8d4260c950c64820b9d1}{}\label{killer_8h_a4853caa194fb8d4260c950c64820b9d1}
+
+
+Definition at line 6 of file killer.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{killer.\+h@{killer.\+h}!killer\+\_\+init@{killer\+\_\+init}}
+\index{killer\+\_\+init@{killer\+\_\+init}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{killer\+\_\+init(void)}{killer_init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void killer\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{killer_8h_a7aff3a01b70d598231e41f7b3e333c50}{}\label{killer_8h_a7aff3a01b70d598231e41f7b3e333c50}
+
+
+Definition at line 25 of file killer.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{killer_8h_a7aff3a01b70d598231e41f7b3e333c50_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{killer_8h_a7aff3a01b70d598231e41f7b3e333c50_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{killer.\+h@{killer.\+h}!killer\+\_\+kill@{killer\+\_\+kill}}
+\index{killer\+\_\+kill@{killer\+\_\+kill}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{killer\+\_\+kill(void)}{killer_kill(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void killer\+\_\+kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{killer_8h_a85e87a09323cfec6bc1965b26cb05392}{}\label{killer_8h_a85e87a09323cfec6bc1965b26cb05392}
+
+
+Definition at line 248 of file killer.\+c.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{killer_8h_a85e87a09323cfec6bc1965b26cb05392_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{killer.\+h@{killer.\+h}!killer\+\_\+kill\+\_\+by\+\_\+port@{killer\+\_\+kill\+\_\+by\+\_\+port}}
+\index{killer\+\_\+kill\+\_\+by\+\_\+port@{killer\+\_\+kill\+\_\+by\+\_\+port}!killer.\+h@{killer.\+h}}
+\subsubsection[{\texorpdfstring{killer\+\_\+kill\+\_\+by\+\_\+port(port\+\_\+t)}{killer_kill_by_port(port_t)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} killer\+\_\+kill\+\_\+by\+\_\+port (
+\begin{DoxyParamCaption}
+\item[{{\bf port\+\_\+t}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{killer_8h_a70cc97402b8dbc02403795ed2e847332}{}\label{killer_8h_a70cc97402b8dbc02403795ed2e847332}
+
+
+Definition at line 253 of file killer.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{killer_8h_a70cc97402b8dbc02403795ed2e847332_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{killer_8h_a70cc97402b8dbc02403795ed2e847332_icgraph}
+\end{center}
+\end{figure}
+
+

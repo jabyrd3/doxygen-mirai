@@ -1,0 +1,308 @@
+\hypertarget{wget_8c}{}\section{mirai/tools/wget.c File Reference}
+\label{wget_8c}\index{mirai/tools/wget.\+c@{mirai/tools/wget.\+c}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/syscall.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/in.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for wget.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wget_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{wget_8c_ac2146a4368b0cbe5375b32ae7f7f01b2}{E\+X\+E\+C\+\_\+\+M\+SG}~\char`\"{}M\+I\+R\+A\+I\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{wget_8c_a563353a34bafaf61f15aa17dc497bf74}{E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN}~6
+\item 
+\#define \hyperlink{wget_8c_a1f1c437c9d0ba933ef2cdb767ba105d5}{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG}~\char`\"{}F\+I\+N\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{wget_8c_a100f50e50ea4fb8b148d38e8f17b4eaa}{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN}~4
+\item 
+\#define \hyperlink{wget_8c_ac00bfb46347d26fdc58568fe1ab5fa5b}{S\+T\+D\+IN}~0
+\item 
+\#define \hyperlink{wget_8c_a8875037d0772a4fc34516f1e03d7e238}{S\+T\+D\+O\+UT}~1
+\item 
+\#define \hyperlink{wget_8c_a3a540e3eef339eec06aff31c4ba1eb25}{S\+T\+D\+E\+RR}~2
+\item 
+\#define \hyperlink{wget_8c_a69a7a4951ff21b302267532c21ee78fc}{H\+T\+O\+NS}(n)~(n)
+\item 
+\#define \hyperlink{wget_8c_a56db719246f1d816e162b3ae60bf58cd}{H\+T\+O\+NL}(n)~(n)
+\item 
+\#define \hyperlink{wget_8c_a827bc7826f3c0abe45e6f0cebc89872b}{S\+CN}(n)~(n)
+\item 
+\#define \hyperlink{wget_8c_aa8318fbee111c5bde5952c63e894c962}{socket}~\hyperlink{wget_8c_a728f7858959f641186eacf59a5302da5}{xsocket}
+\item 
+\#define \hyperlink{wget_8c_ac40a1eaac5f8dbc1eef9b944d494770c}{write}~\hyperlink{wget_8c_ab616878efd6e91d7d37783c8b81f24bf}{xwrite}
+\item 
+\#define \hyperlink{wget_8c_a68dc4fd7189d34e2052e25ada13f89e0}{read}~\hyperlink{wget_8c_a000b46f54ba45eda6e187e581982d69c}{xread}
+\item 
+\#define \hyperlink{wget_8c_adfd4ee688142ebda1142c1b0c7577e91}{connect}~\hyperlink{wget_8c_a6f67c7e9a35b82ed56634e82b00f0331}{xconnect}
+\item 
+\#define \hyperlink{wget_8c_a8854c2a82db965759bd6095a666ffb76}{open}~\hyperlink{wget_8c_a5cc7a7245c891d41f3c533616e807ac1}{xopen}
+\item 
+\#define \hyperlink{wget_8c_a9c7f6d5331abb2692a876d5ee67474b7}{close}~\hyperlink{wget_8c_aa6fc2cf75da82e3d18dfc3f8ce383145}{xclose}
+\item 
+\#define \hyperlink{wget_8c_a98997f8af097472ccf19534c24cb4a24}{\+\_\+\+\_\+exit}~\hyperlink{wget_8c_a0c8ddc429cc2c21fccdc9a93cd46c434}{x\+\_\+\+\_\+exit}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{wget_8c_a728f7858959f641186eacf59a5302da5}{xsocket} (int, int, int)
+\item 
+int \hyperlink{wget_8c_ab616878efd6e91d7d37783c8b81f24bf}{xwrite} (int, void $\ast$, int)
+\item 
+int \hyperlink{wget_8c_a000b46f54ba45eda6e187e581982d69c}{xread} (int, void $\ast$, int)
+\item 
+int \hyperlink{wget_8c_a6f67c7e9a35b82ed56634e82b00f0331}{xconnect} (int, struct sockaddr\+\_\+in $\ast$, int)
+\item 
+int \hyperlink{wget_8c_a5cc7a7245c891d41f3c533616e807ac1}{xopen} (char $\ast$, int, int)
+\item 
+int \hyperlink{wget_8c_aa6fc2cf75da82e3d18dfc3f8ce383145}{xclose} (int)
+\item 
+void \hyperlink{wget_8c_a0c8ddc429cc2c21fccdc9a93cd46c434}{x\+\_\+\+\_\+exit} (int)
+\item 
+int \hyperlink{wget_8c_a7a29781a20c5dd4153c3c1cecf0ff328}{main} (int argc, char $\ast$$\ast$args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{wget.\+c@{wget.\+c}!\+\_\+\+\_\+exit@{\+\_\+\+\_\+exit}}
+\index{\+\_\+\+\_\+exit@{\+\_\+\+\_\+exit}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+exit}{__exit}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+exit~{\bf x\+\_\+\+\_\+exit}}\hypertarget{wget_8c_a98997f8af097472ccf19534c24cb4a24}{}\label{wget_8c_a98997f8af097472ccf19534c24cb4a24}
+
+
+Definition at line 53 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!close@{close}}
+\index{close@{close}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{close}{close}}]{\setlength{\rightskip}{0pt plus 5cm}\#define close~{\bf xclose}}\hypertarget{wget_8c_a9c7f6d5331abb2692a876d5ee67474b7}{}\label{wget_8c_a9c7f6d5331abb2692a876d5ee67474b7}
+
+
+Definition at line 52 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!connect@{connect}}
+\index{connect@{connect}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{connect}{connect}}]{\setlength{\rightskip}{0pt plus 5cm}\#define connect~{\bf xconnect}}\hypertarget{wget_8c_adfd4ee688142ebda1142c1b0c7577e91}{}\label{wget_8c_adfd4ee688142ebda1142c1b0c7577e91}
+
+
+Definition at line 50 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG@{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG}}
+\index{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG@{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG}{DOWNLOAD_MSG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+SG~\char`\"{}F\+I\+N\textbackslash{}n\char`\"{}}\hypertarget{wget_8c_a1f1c437c9d0ba933ef2cdb767ba105d5}{}\label{wget_8c_a1f1c437c9d0ba933ef2cdb767ba105d5}
+
+
+Definition at line 12 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN@{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN}}
+\index{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN@{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN}{DOWNLOAD_MSG_LEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+S\+G\+\_\+\+L\+EN~4}\hypertarget{wget_8c_a100f50e50ea4fb8b148d38e8f17b4eaa}{}\label{wget_8c_a100f50e50ea4fb8b148d38e8f17b4eaa}
+
+
+Definition at line 13 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!E\+X\+E\+C\+\_\+\+M\+SG@{E\+X\+E\+C\+\_\+\+M\+SG}}
+\index{E\+X\+E\+C\+\_\+\+M\+SG@{E\+X\+E\+C\+\_\+\+M\+SG}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{E\+X\+E\+C\+\_\+\+M\+SG}{EXEC_MSG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+X\+E\+C\+\_\+\+M\+SG~\char`\"{}M\+I\+R\+A\+I\textbackslash{}n\char`\"{}}\hypertarget{wget_8c_ac2146a4368b0cbe5375b32ae7f7f01b2}{}\label{wget_8c_ac2146a4368b0cbe5375b32ae7f7f01b2}
+
+
+Definition at line 9 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN@{E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN}}
+\index{E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN@{E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN}{EXEC_MSG_LEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+X\+E\+C\+\_\+\+M\+S\+G\+\_\+\+L\+EN~6}\hypertarget{wget_8c_a563353a34bafaf61f15aa17dc497bf74}{}\label{wget_8c_a563353a34bafaf61f15aa17dc497bf74}
+
+
+Definition at line 10 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!H\+T\+O\+NL@{H\+T\+O\+NL}}
+\index{H\+T\+O\+NL@{H\+T\+O\+NL}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{H\+T\+O\+NL}{HTONL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+O\+NL(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(n)}\hypertarget{wget_8c_a56db719246f1d816e162b3ae60bf58cd}{}\label{wget_8c_a56db719246f1d816e162b3ae60bf58cd}
+
+
+Definition at line 21 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!H\+T\+O\+NS@{H\+T\+O\+NS}}
+\index{H\+T\+O\+NS@{H\+T\+O\+NS}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{H\+T\+O\+NS}{HTONS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+O\+NS(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(n)}\hypertarget{wget_8c_a69a7a4951ff21b302267532c21ee78fc}{}\label{wget_8c_a69a7a4951ff21b302267532c21ee78fc}
+
+
+Definition at line 20 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!open@{open}}
+\index{open@{open}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{open}{open}}]{\setlength{\rightskip}{0pt plus 5cm}\#define open~{\bf xopen}}\hypertarget{wget_8c_a8854c2a82db965759bd6095a666ffb76}{}\label{wget_8c_a8854c2a82db965759bd6095a666ffb76}
+
+
+Definition at line 51 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!read@{read}}
+\index{read@{read}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{read}{read}}]{\setlength{\rightskip}{0pt plus 5cm}\#define read~{\bf xread}}\hypertarget{wget_8c_a68dc4fd7189d34e2052e25ada13f89e0}{}\label{wget_8c_a68dc4fd7189d34e2052e25ada13f89e0}
+
+
+Definition at line 49 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!S\+CN@{S\+CN}}
+\index{S\+CN@{S\+CN}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{S\+CN}{SCN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+CN(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(n)}\hypertarget{wget_8c_a827bc7826f3c0abe45e6f0cebc89872b}{}\label{wget_8c_a827bc7826f3c0abe45e6f0cebc89872b}
+
+
+Definition at line 35 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!socket@{socket}}
+\index{socket@{socket}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{socket}{socket}}]{\setlength{\rightskip}{0pt plus 5cm}\#define socket~{\bf xsocket}}\hypertarget{wget_8c_aa8318fbee111c5bde5952c63e894c962}{}\label{wget_8c_aa8318fbee111c5bde5952c63e894c962}
+
+
+Definition at line 47 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}}
+\index{S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{S\+T\+D\+E\+RR}{STDERR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+D\+E\+RR~2}\hypertarget{wget_8c_a3a540e3eef339eec06aff31c4ba1eb25}{}\label{wget_8c_a3a540e3eef339eec06aff31c4ba1eb25}
+
+
+Definition at line 17 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!S\+T\+D\+IN@{S\+T\+D\+IN}}
+\index{S\+T\+D\+IN@{S\+T\+D\+IN}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{S\+T\+D\+IN}{STDIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+D\+IN~0}\hypertarget{wget_8c_ac00bfb46347d26fdc58568fe1ab5fa5b}{}\label{wget_8c_ac00bfb46347d26fdc58568fe1ab5fa5b}
+
+
+Definition at line 15 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}}
+\index{S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{S\+T\+D\+O\+UT}{STDOUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+D\+O\+UT~1}\hypertarget{wget_8c_a8875037d0772a4fc34516f1e03d7e238}{}\label{wget_8c_a8875037d0772a4fc34516f1e03d7e238}
+
+
+Definition at line 16 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!write@{write}}
+\index{write@{write}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{write}{write}}]{\setlength{\rightskip}{0pt plus 5cm}\#define write~{\bf xwrite}}\hypertarget{wget_8c_ac40a1eaac5f8dbc1eef9b944d494770c}{}\label{wget_8c_ac40a1eaac5f8dbc1eef9b944d494770c}
+
+
+Definition at line 48 of file wget.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{wget.\+c@{wget.\+c}!main@{main}}
+\index{main@{main}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$args)}{main(int argc, char **args)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{args}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a7a29781a20c5dd4153c3c1cecf0ff328}{}\label{wget_8c_a7a29781a20c5dd4153c3c1cecf0ff328}
+
+
+Definition at line 64 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!x\+\_\+\+\_\+exit@{x\+\_\+\+\_\+exit}}
+\index{x\+\_\+\+\_\+exit@{x\+\_\+\+\_\+exit}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{x\+\_\+\+\_\+exit(int)}{x__exit(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void x\+\_\+\+\_\+exit (
+\begin{DoxyParamCaption}
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a0c8ddc429cc2c21fccdc9a93cd46c434}{}\label{wget_8c_a0c8ddc429cc2c21fccdc9a93cd46c434}
+
+
+Definition at line 180 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xclose@{xclose}}
+\index{xclose@{xclose}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xclose(int)}{xclose(int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xclose (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_aa6fc2cf75da82e3d18dfc3f8ce383145}{}\label{wget_8c_aa6fc2cf75da82e3d18dfc3f8ce383145}
+
+
+Definition at line 175 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xconnect@{xconnect}}
+\index{xconnect@{xconnect}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xconnect(int, struct sockaddr\+\_\+in $\ast$, int)}{xconnect(int, struct sockaddr_in *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xconnect (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{struct sockaddr\+\_\+in $\ast$}]{addr, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a6f67c7e9a35b82ed56634e82b00f0331}{}\label{wget_8c_a6f67c7e9a35b82ed56634e82b00f0331}
+
+
+Definition at line 153 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xopen@{xopen}}
+\index{xopen@{xopen}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xopen(char $\ast$, int, int)}{xopen(char *, int, int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xopen (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{int}]{flags, }
+\item[{int}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a5cc7a7245c891d41f3c533616e807ac1}{}\label{wget_8c_a5cc7a7245c891d41f3c533616e807ac1}
+
+
+Definition at line 170 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xread@{xread}}
+\index{xread@{xread}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xread(int, void $\ast$, int)}{xread(int, void *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xread (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a000b46f54ba45eda6e187e581982d69c}{}\label{wget_8c_a000b46f54ba45eda6e187e581982d69c}
+
+
+Definition at line 143 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xsocket@{xsocket}}
+\index{xsocket@{xsocket}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xsocket(int, int, int)}{xsocket(int, int, int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xsocket (
+\begin{DoxyParamCaption}
+\item[{int}]{domain, }
+\item[{int}]{type, }
+\item[{int}]{protocol}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_a728f7858959f641186eacf59a5302da5}{}\label{wget_8c_a728f7858959f641186eacf59a5302da5}
+
+
+Definition at line 128 of file wget.\+c.
+
+\index{wget.\+c@{wget.\+c}!xwrite@{xwrite}}
+\index{xwrite@{xwrite}!wget.\+c@{wget.\+c}}
+\subsubsection[{\texorpdfstring{xwrite(int, void $\ast$, int)}{xwrite(int, void *, int)}}]{\setlength{\rightskip}{0pt plus 5cm}int xwrite (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{wget_8c_ab616878efd6e91d7d37783c8b81f24bf}{}\label{wget_8c_ab616878efd6e91d7d37783c8b81f24bf}
+
+
+Definition at line 148 of file wget.\+c.
+

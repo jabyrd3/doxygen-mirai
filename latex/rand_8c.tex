@@ -1,0 +1,187 @@
+\hypertarget{rand_8c}{}\section{mirai/bot/rand.c File Reference}
+\label{rand_8c}\index{mirai/bot/rand.\+c@{mirai/bot/rand.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}includes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rand.\+h\char`\"{}}\\*
+Include dependency graph for rand.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rand_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{rand_8c_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{rand_8c_ab74192959d5c945feaf0a630b58fd123}{rand\+\_\+init} (void)
+\item 
+uint32\+\_\+t \hyperlink{rand_8c_accf5c4faf4fb7eb9d74bbf1764921b00}{rand\+\_\+next} (void)
+\item 
+void \hyperlink{rand_8c_a11c986f4ca9d396a9bc68c0dd4b3903f}{rand\+\_\+str} (char $\ast$str, int len)
+\item 
+void \hyperlink{rand_8c_a600660d96f167d01ebcc62258688a921}{rand\+\_\+alphastr} (uint8\+\_\+t $\ast$str, int len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{rand.\+c@{rand.\+c}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!rand.\+c@{rand.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{_GNU_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{rand_8c_a369266c24eacffb87046522897a570d5}{}\label{rand_8c_a369266c24eacffb87046522897a570d5}
+
+
+Definition at line 1 of file rand.\+c.
+
+
+
+\subsection{Function Documentation}
+\index{rand.\+c@{rand.\+c}!rand\+\_\+alphastr@{rand\+\_\+alphastr}}
+\index{rand\+\_\+alphastr@{rand\+\_\+alphastr}!rand.\+c@{rand.\+c}}
+\subsubsection[{\texorpdfstring{rand\+\_\+alphastr(uint8\+\_\+t $\ast$str, int len)}{rand_alphastr(uint8_t *str, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void rand\+\_\+alphastr (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{str, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{rand_8c_a600660d96f167d01ebcc62258688a921}{}\label{rand_8c_a600660d96f167d01ebcc62258688a921}
+
+
+Definition at line 56 of file rand.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{rand_8c_a600660d96f167d01ebcc62258688a921_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rand_8c_a600660d96f167d01ebcc62258688a921_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rand.\+c@{rand.\+c}!rand\+\_\+init@{rand\+\_\+init}}
+\index{rand\+\_\+init@{rand\+\_\+init}!rand.\+c@{rand.\+c}}
+\subsubsection[{\texorpdfstring{rand\+\_\+init(void)}{rand_init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void rand\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{rand_8c_ab74192959d5c945feaf0a630b58fd123}{}\label{rand_8c_ab74192959d5c945feaf0a630b58fd123}
+
+
+Definition at line 13 of file rand.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{rand_8c_ab74192959d5c945feaf0a630b58fd123_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{rand_8c_ab74192959d5c945feaf0a630b58fd123_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rand.\+c@{rand.\+c}!rand\+\_\+next@{rand\+\_\+next}}
+\index{rand\+\_\+next@{rand\+\_\+next}!rand.\+c@{rand.\+c}}
+\subsubsection[{\texorpdfstring{rand\+\_\+next(void)}{rand_next(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t rand\+\_\+next (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{rand_8c_accf5c4faf4fb7eb9d74bbf1764921b00}{}\label{rand_8c_accf5c4faf4fb7eb9d74bbf1764921b00}
+
+
+Definition at line 21 of file rand.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{rand_8c_accf5c4faf4fb7eb9d74bbf1764921b00_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rand_8c_accf5c4faf4fb7eb9d74bbf1764921b00_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rand.\+c@{rand.\+c}!rand\+\_\+str@{rand\+\_\+str}}
+\index{rand\+\_\+str@{rand\+\_\+str}!rand.\+c@{rand.\+c}}
+\subsubsection[{\texorpdfstring{rand\+\_\+str(char $\ast$str, int len)}{rand_str(char *str, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void rand\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{rand_8c_a11c986f4ca9d396a9bc68c0dd4b3903f}{}\label{rand_8c_a11c986f4ca9d396a9bc68c0dd4b3903f}
+
+
+Definition at line 32 of file rand.\+c.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{rand_8c_a11c986f4ca9d396a9bc68c0dd4b3903f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rand_8c_a11c986f4ca9d396a9bc68c0dd4b3903f_icgraph}
+\end{center}
+\end{figure}
+
+

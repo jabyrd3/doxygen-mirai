@@ -1,0 +1,273 @@
+\hypertarget{structconnection}{}\section{connection Struct Reference}
+\label{structconnection}\index{connection@{connection}}
+
+
+{\ttfamily \#include $<$connection.\+h$>$}
+
+
+
+Collaboration diagram for connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{structconnection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55baa1b4bff41eac9b0771879a7445e2e625}{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8998e127095176ae14edef8bde7299c9}{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b8b1dabcf7f403ea393c6dab70b6c57}{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba2a51f1b5fa2595ce04dbdba371555378}{T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT}, 
+\\*
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba069eb41c505a98e20f9b8165532a1b1e}{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba0cbee3610b4a9c9ccad087a9c85d1dd5}{T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf592f402b74ddbe8d0ef5f9c639a083e}{T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae4406ee9adc88ace91975587f0c9774d}{T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN}, 
+\\*
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8f2fbda0323cd96ef8613fba917824ce}{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae48fd3d9abd51f1ea571568362f75d6e}{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55bafbb752f7bdf2ba25f10aa223bcdb2612}{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba717896f9bee5fc1d743b4644031ee815}{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO}, 
+\\*
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba752653bedd6abb27e63c5f22a85359bb}{T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba821472fcea41f8e6cedc4c9153123851}{T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf7c3ce71da3ce76dea8983fe4953047d}{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba9228ad22627e4d005e4f5b0d29cfeefc}{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO}, 
+\\*
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55babe5eda2fcf7fc14a2de30f126d52d0de}{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55bac22061615917ac32ad622371da5aebc3}{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b7546ff9ea83cbca6f571cb2b610982}{T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY}, 
+\hyperlink{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae78cffc409b9ed638432c86ff3d2a3d5}{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{structconnection_a0abaf4b5d42c4e5d19190035fade3599}{lock}
+\item 
+struct \hyperlink{structserver}{server} $\ast$ \hyperlink{structconnection_a1b6916fd6bd625513f86cc35333623c9}{srv}
+\item 
+struct \hyperlink{structbinary}{binary} $\ast$ \hyperlink{structconnection_a09081b9b889d057bcf9376214ea9bfaf}{bin}
+\item 
+struct \hyperlink{structtelnet__info}{telnet\+\_\+info} \hyperlink{structconnection_ae0e5788a0922fcf7ea0e1f73b5fcbea7}{info}
+\item 
+int \hyperlink{structconnection_a6f8059414f0228f0256115e024eeed4b}{fd}
+\item 
+int \hyperlink{structconnection_ad1e04a9c082c6992a98a404842e4662c}{echo\+\_\+load\+\_\+pos}
+\item 
+time\+\_\+t \hyperlink{structconnection_a2d8aa7cb65467972a3e2979501154f95}{last\+\_\+recv}
+\item 
+enum connection\+:: \{ ... \}  \hyperlink{structconnection_a86edf08e7089b8c6cb5e37b284913496}{state\+\_\+telnet}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>char \hyperlink{structconnection_a5233f4a930689daddd3ad8ef607eba2d}{data} \mbox{[}512\mbox{]}\\
+\>int \hyperlink{structconnection_a30d410aac9d815897af98403ade9fc25}{deadline}\\
+\} \hyperlink{structconnection_a48fdd11f6626fbc7383519e83d1e1851}{output\_buffer}\\
+
+\end{tabbing}\item 
+uint16\+\_\+t \hyperlink{structconnection_a29724ccd4546e85e7f3a729236694fc6}{rdbuf\+\_\+pos}
+\item 
+uint16\+\_\+t \hyperlink{structconnection_a7f1ad43d3bf79b40bc39dbb5a6c3a5ae}{timeout}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{structconnection_a052959388a3bbdb746f83ecd99c2faf7}{open}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{structconnection_ac4403be70190235a7adbfb00e7b2e656}{success}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{structconnection_a589462cfe27c04b6a09ff7ef2d8cf35d}{retry\+\_\+bin}
+\item 
+\hyperlink{loader_2src_2headers_2includes_8h_af492d2bddcb2befacb3aa03dcdf9aafd}{B\+O\+OL} \hyperlink{structconnection_aef6f6bfbc341950b4e7b75700dfaaee8}{ctrlc\+\_\+retry}
+\item 
+uint8\+\_\+t \hyperlink{structconnection_a5ef1bf0cfdcd46839f0cfa90ca3c76df}{rdbuf} \mbox{[}8192\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file connection.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55b}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED@{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED@{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+O\+S\+ED\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55baa1b4bff41eac9b0771879a7445e2e625}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55baa1b4bff41eac9b0771879a7445e2e625}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8998e127095176ae14edef8bde7299c9}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8998e127095176ae14edef8bde7299c9}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS@{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS@{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+I\+A\+CS\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b8b1dabcf7f403ea393c6dab70b6c57}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b8b1dabcf7f403ea393c6dab70b6c57}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+O\+M\+PT\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba2a51f1b5fa2595ce04dbdba371555378}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba2a51f1b5fa2595ce04dbdba371555378}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba069eb41c505a98e20f9b8165532a1b1e}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba069eb41c505a98e20f9b8165532a1b1e}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT@{T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+W\+A\+I\+T\+P\+A\+S\+S\+\_\+\+P\+R\+O\+M\+PT\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba0cbee3610b4a9c9ccad087a9c85d1dd5}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba0cbee3610b4a9c9ccad087a9c85d1dd5}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN@{T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN@{T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+C\+H\+E\+C\+K\+\_\+\+L\+O\+G\+IN\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf592f402b74ddbe8d0ef5f9c639a083e}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf592f402b74ddbe8d0ef5f9c639a083e}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN@{T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN@{T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+L\+O\+G\+IN\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae4406ee9adc88ace91975587f0c9774d}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae4406ee9adc88ace91975587f0c9774d}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+PS\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8f2fbda0323cd96ef8613fba917824ce}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8f2fbda0323cd96ef8613fba917824ce}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS@{T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+O\+U\+N\+TS\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae48fd3d9abd51f1ea571568362f75d6e}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae48fd3d9abd51f1ea571568362f75d6e}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE@{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE@{T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55bafbb752f7bdf2ba25f10aa223bcdb2612}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55bafbb752f7bdf2ba25f10aa223bcdb2612}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO@{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO@{T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+C\+O\+P\+Y\+\_\+\+E\+C\+HO\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba717896f9bee5fc1d743b4644031ee815}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba717896f9bee5fc1d743b4644031ee815}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH@{T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH@{T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+A\+R\+CH\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba752653bedd6abb27e63c5f22a85359bb}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba752653bedd6abb27e63c5f22a85359bb}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE@{T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE@{T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+A\+R\+M\+\_\+\+S\+U\+B\+T\+Y\+PE\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba821472fcea41f8e6cedc4c9153123851}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba821472fcea41f8e6cedc4c9153123851}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+E\+T\+H\+O\+DS\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf7c3ce71da3ce76dea8983fe4953047d}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55baf7c3ce71da3ce76dea8983fe4953047d}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+E\+C\+HO\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba9228ad22627e4d005e4f5b0d29cfeefc}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba9228ad22627e4d005e4f5b0d29cfeefc}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+W\+G\+ET\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55babe5eda2fcf7fc14a2de30f126d52d0de}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55babe5eda2fcf7fc14a2de30f126d52d0de}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP@{T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+T\+F\+TP\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55bac22061615917ac32ad622371da5aebc3}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55bac22061615917ac32ad622371da5aebc3}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY@{T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY@{T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+R\+U\+N\+\_\+\+B\+I\+N\+A\+RY\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b7546ff9ea83cbca6f571cb2b610982}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55ba8b7546ff9ea83cbca6f571cb2b610982}
+}]\index{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP@{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP}!connection@{connection}}\index{connection@{connection}!T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP@{T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP}}\item[{\em 
+T\+E\+L\+N\+E\+T\+\_\+\+C\+L\+E\+A\+N\+UP\hypertarget{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae78cffc409b9ed638432c86ff3d2a3d5}{}\label{structconnection_a06fc87d81c62e9abb8790b6e5713c55bae78cffc409b9ed638432c86ff3d2a3d5}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 15 of file connection.\+h.
+
+
+
+\subsection{Field Documentation}
+\index{connection@{connection}!bin@{bin}}
+\index{bin@{bin}!connection@{connection}}
+\subsubsection[{\texorpdfstring{bin}{bin}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf binary}$\ast$ bin}\hypertarget{structconnection_a09081b9b889d057bcf9376214ea9bfaf}{}\label{structconnection_a09081b9b889d057bcf9376214ea9bfaf}
+
+
+Definition at line 11 of file connection.\+h.
+
+\index{connection@{connection}!ctrlc\+\_\+retry@{ctrlc\+\_\+retry}}
+\index{ctrlc\+\_\+retry@{ctrlc\+\_\+retry}!connection@{connection}}
+\subsubsection[{\texorpdfstring{ctrlc\+\_\+retry}{ctrlc_retry}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} ctrlc\+\_\+retry}\hypertarget{structconnection_aef6f6bfbc341950b4e7b75700dfaaee8}{}\label{structconnection_aef6f6bfbc341950b4e7b75700dfaaee8}
+
+
+Definition at line 42 of file connection.\+h.
+
+\index{connection@{connection}!data@{data}}
+\index{data@{data}!connection@{connection}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}char data\mbox{[}512\mbox{]}}\hypertarget{structconnection_a5233f4a930689daddd3ad8ef607eba2d}{}\label{structconnection_a5233f4a930689daddd3ad8ef607eba2d}
+
+
+Definition at line 38 of file connection.\+h.
+
+\index{connection@{connection}!deadline@{deadline}}
+\index{deadline@{deadline}!connection@{connection}}
+\subsubsection[{\texorpdfstring{deadline}{deadline}}]{\setlength{\rightskip}{0pt plus 5cm}int deadline}\hypertarget{structconnection_a30d410aac9d815897af98403ade9fc25}{}\label{structconnection_a30d410aac9d815897af98403ade9fc25}
+
+
+Definition at line 39 of file connection.\+h.
+
+\index{connection@{connection}!echo\+\_\+load\+\_\+pos@{echo\+\_\+load\+\_\+pos}}
+\index{echo\+\_\+load\+\_\+pos@{echo\+\_\+load\+\_\+pos}!connection@{connection}}
+\subsubsection[{\texorpdfstring{echo\+\_\+load\+\_\+pos}{echo_load_pos}}]{\setlength{\rightskip}{0pt plus 5cm}int echo\+\_\+load\+\_\+pos}\hypertarget{structconnection_ad1e04a9c082c6992a98a404842e4662c}{}\label{structconnection_ad1e04a9c082c6992a98a404842e4662c}
+
+
+Definition at line 13 of file connection.\+h.
+
+\index{connection@{connection}!fd@{fd}}
+\index{fd@{fd}!connection@{connection}}
+\subsubsection[{\texorpdfstring{fd}{fd}}]{\setlength{\rightskip}{0pt plus 5cm}int fd}\hypertarget{structconnection_a6f8059414f0228f0256115e024eeed4b}{}\label{structconnection_a6f8059414f0228f0256115e024eeed4b}
+
+
+Definition at line 13 of file connection.\+h.
+
+\index{connection@{connection}!info@{info}}
+\index{info@{info}!connection@{connection}}
+\subsubsection[{\texorpdfstring{info}{info}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf telnet\+\_\+info} info}\hypertarget{structconnection_ae0e5788a0922fcf7ea0e1f73b5fcbea7}{}\label{structconnection_ae0e5788a0922fcf7ea0e1f73b5fcbea7}
+
+
+Definition at line 12 of file connection.\+h.
+
+\index{connection@{connection}!last\+\_\+recv@{last\+\_\+recv}}
+\index{last\+\_\+recv@{last\+\_\+recv}!connection@{connection}}
+\subsubsection[{\texorpdfstring{last\+\_\+recv}{last_recv}}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t last\+\_\+recv}\hypertarget{structconnection_a2d8aa7cb65467972a3e2979501154f95}{}\label{structconnection_a2d8aa7cb65467972a3e2979501154f95}
+
+
+Definition at line 14 of file connection.\+h.
+
+\index{connection@{connection}!lock@{lock}}
+\index{lock@{lock}!connection@{connection}}
+\subsubsection[{\texorpdfstring{lock}{lock}}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t lock}\hypertarget{structconnection_a0abaf4b5d42c4e5d19190035fade3599}{}\label{structconnection_a0abaf4b5d42c4e5d19190035fade3599}
+
+
+Definition at line 9 of file connection.\+h.
+
+\index{connection@{connection}!open@{open}}
+\index{open@{open}!connection@{connection}}
+\subsubsection[{\texorpdfstring{open}{open}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} open}\hypertarget{structconnection_a052959388a3bbdb746f83ecd99c2faf7}{}\label{structconnection_a052959388a3bbdb746f83ecd99c2faf7}
+
+
+Definition at line 42 of file connection.\+h.
+
+\index{connection@{connection}!output\+\_\+buffer@{output\+\_\+buffer}}
+\index{output\+\_\+buffer@{output\+\_\+buffer}!connection@{connection}}
+\subsubsection[{\texorpdfstring{output\+\_\+buffer}{output_buffer}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   output\+\_\+buffer}\hypertarget{structconnection_a48fdd11f6626fbc7383519e83d1e1851}{}\label{structconnection_a48fdd11f6626fbc7383519e83d1e1851}
+\index{connection@{connection}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!connection@{connection}}
+\subsubsection[{\texorpdfstring{rdbuf}{rdbuf}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t rdbuf\mbox{[}8192\mbox{]}}\hypertarget{structconnection_a5ef1bf0cfdcd46839f0cfa90ca3c76df}{}\label{structconnection_a5ef1bf0cfdcd46839f0cfa90ca3c76df}
+
+
+Definition at line 43 of file connection.\+h.
+
+\index{connection@{connection}!rdbuf\+\_\+pos@{rdbuf\+\_\+pos}}
+\index{rdbuf\+\_\+pos@{rdbuf\+\_\+pos}!connection@{connection}}
+\subsubsection[{\texorpdfstring{rdbuf\+\_\+pos}{rdbuf_pos}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t rdbuf\+\_\+pos}\hypertarget{structconnection_a29724ccd4546e85e7f3a729236694fc6}{}\label{structconnection_a29724ccd4546e85e7f3a729236694fc6}
+
+
+Definition at line 41 of file connection.\+h.
+
+\index{connection@{connection}!retry\+\_\+bin@{retry\+\_\+bin}}
+\index{retry\+\_\+bin@{retry\+\_\+bin}!connection@{connection}}
+\subsubsection[{\texorpdfstring{retry\+\_\+bin}{retry_bin}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} retry\+\_\+bin}\hypertarget{structconnection_a589462cfe27c04b6a09ff7ef2d8cf35d}{}\label{structconnection_a589462cfe27c04b6a09ff7ef2d8cf35d}
+
+
+Definition at line 42 of file connection.\+h.
+
+\index{connection@{connection}!srv@{srv}}
+\index{srv@{srv}!connection@{connection}}
+\subsubsection[{\texorpdfstring{srv}{srv}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf server}$\ast$ srv}\hypertarget{structconnection_a1b6916fd6bd625513f86cc35333623c9}{}\label{structconnection_a1b6916fd6bd625513f86cc35333623c9}
+
+
+Definition at line 10 of file connection.\+h.
+
+\index{connection@{connection}!state\+\_\+telnet@{state\+\_\+telnet}}
+\index{state\+\_\+telnet@{state\+\_\+telnet}!connection@{connection}}
+\subsubsection[{\texorpdfstring{state\+\_\+telnet}{state_telnet}}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   state\+\_\+telnet}\hypertarget{structconnection_a86edf08e7089b8c6cb5e37b284913496}{}\label{structconnection_a86edf08e7089b8c6cb5e37b284913496}
+\index{connection@{connection}!success@{success}}
+\index{success@{success}!connection@{connection}}
+\subsubsection[{\texorpdfstring{success}{success}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} success}\hypertarget{structconnection_ac4403be70190235a7adbfb00e7b2e656}{}\label{structconnection_ac4403be70190235a7adbfb00e7b2e656}
+
+
+Definition at line 42 of file connection.\+h.
+
+\index{connection@{connection}!timeout@{timeout}}
+\index{timeout@{timeout}!connection@{connection}}
+\subsubsection[{\texorpdfstring{timeout}{timeout}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t timeout}\hypertarget{structconnection_a7f1ad43d3bf79b40bc39dbb5a6c3a5ae}{}\label{structconnection_a7f1ad43d3bf79b40bc39dbb5a6c3a5ae}
+
+
+Definition at line 41 of file connection.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+loader/src/headers/\hyperlink{connection_8h}{connection.\+h}\end{DoxyCompactItemize}
